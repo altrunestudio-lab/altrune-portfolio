@@ -905,20 +905,20 @@ html[data-exported="true"] .cap {
   text-align: center;
   text-transform: uppercase;
 }
+
+
+/* ================= SAVING + GITHUB TYPOGRAPHY ================= */
+/* Role styles are emitted onto [data-role], so dynamically discovered GitHub
+   titles and metadata receive the same font, weight, spacing and layout rules. */
+.github-media-fallback { text-wrap: balance; }
 </style>
-<style id="roleStyles">.editable[data-role="cta"]{font-family:"Fraunces", Georgia, serif;font-size:45px;line-height:1;font-style:italic;}
-.editable[data-role="title"]{font-family:"Archivo", Helvetica, sans-serif;font-size:18px;font-weight:600;font-style:normal;}
-.editable[data-role="meta"]{font-family:"Archivo", Helvetica, sans-serif;font-style:italic;}
-.editable[data-role="section"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:43px;}
-.editable[data-role="strapline"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:34px;color:#000000;}
-.editable[data-role="about"]{font-size:17px;letter-spacing:-0.02em;}
-</style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json"}</script></head>
-<body class="" style="">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&amp;family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" id="portfolioGoogleFonts" rel="stylesheet"><style id="roleStyles"></style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json"}</script></head>
+<body style="" class="">
 <div aria-hidden="true" class="custom-cursor" id="customCursor"><div class="cursor-arrow"><svg aria-hidden="true" fill="none" viewBox="0 0 24 24"><path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div></div>
 <header>
 <div class="brand-wrap">
 <img alt="logo" id="logoImg" style="display: none;">
-<a class="brand editable" data-field="brand" data-role="brand" href="#top" style="">Altrune</a>
+<a class="brand editable" data-field="brand" data-role="brand" href="#top">Altrune</a>
 </div>
 <nav>
 <a href="#top">Featured</a>
@@ -943,25 +943,25 @@ html[data-exported="true"] .cap {
 <div class="hero-dots" id="heroDots"></div>
 </div>
 <div class="hero-caption">
-<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">Twin Towers</h1>
+<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">The Spire</h1>
 <div class="hero-meta">
-<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Vela Works</span>
+<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Fjord Studio</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">New York, USA</span>
+<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Chicago, USA</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2023</span>
+<span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2024</span>
 </div>
 </div>
 </section>
 <section class="strapline in-view" data-reveal="">
-<p class="editable" data-field="strapline" data-role="strapline">We believe the future should be experienced before it exists. We combine storytelling &amp; technology at their core&nbsp;<div><br></div><div>&nbsp;We’re architects who happen to be great at rendering.&nbsp;&nbsp;</div></p>
+<p class="editable" data-field="strapline" data-role="strapline">We combine technical precision with a sculptor's eye for light — <span>every render is a small architecture of its own.</span></p>
 </section>
 <section class="about in-view" data-reveal="" id="about">
 <div class="about-inner editable" data-field="about" data-role="about">Altrune is a 3D visualization studio crafting architectural imagery, product renders and spatial studies. We work with architects, developers and designers to turn drawings into light, texture and atmosphere.</div>
 </section>
 <div class="section-label in-view" data-reveal="">
 <span class="idx">01</span>
-<h2 class="editable" data-field="workTitle" data-role="section">Selected Works</h2>
+<h2 class="editable" data-field="workTitle" data-role="section">Selected Work</h2>
 <span class="line"></span>
 </div>
 <main id="work">
@@ -969,7 +969,7 @@ html[data-exported="true"] .cap {
 </main>
 <footer id="contact">
 <div class="footer-top">
-<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><a href="/cdn-cgi/l/email-protection#5839342c2a2d363d2b2c2d3c3137183f35393134763b3735">Let's talk </a>Altrunestudio@gmail.com</p>
+<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><a href="/cdn-cgi/l/email-protection#b1d0ddc5c3c4dfd4c2c5c4d5d8def1d6dcd0d8dd9fd2dedc">Let's talk — <span class="__cf_email__" data-cfemail="3b5a574f494e555e484f4e5f52547b5c565a525715585456">[email&nbsp;protected]</span></a></p>
 
 </div>
 <div class="footer-bottom">
@@ -979,7 +979,7 @@ html[data-exported="true"] .cap {
       &nbsp;·&nbsp;
       <a href="https://kulean.artstation.com/" target="_blank">Artstation</a>
       &nbsp;·&nbsp;
-      <a href="/cdn-cgi/l/email-protection#9dfcf1e9efe8f3f8eee9e8f9f4f2ddfaf0fcf4f1b3fef2f0"><span class="__cf_email__" data-cfemail="c1a0adb5b3b4afa4b2b5b4a5a8ae81a6aca0a8adefa2aeac">[email&nbsp;protected]</span></a>
+      <a href="/cdn-cgi/l/email-protection#a5c4c9d1d7d0cbc0d6d1d0c1cccae5c2c8c4ccc98bc6cac8"><span class="__cf_email__" data-cfemail="8dece1f9fff8e3e8fef9f8e9e4e2cdeae0ece4e1a3eee2e0">[email&nbsp;protected]</span></a>
 </span>
 </div>
 </footer>
@@ -991,6 +991,7 @@ html[data-exported="true"] .cap {
 <img alt="" id="lb-img" style="display: block;">
 <video controls="" id="lb-video" playsinline="" style="display:none"></video></div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
 
 
 
@@ -1231,7 +1232,7 @@ function renderRoleStyles(){
     if (s.fontStyle) d += `font-style:${s.fontStyle};`;
     if (s.textTransform) d += `text-transform:${s.textTransform};`;
     if (s.textAlign) d += `text-align:${s.textAlign};`;
-    if (d) css += `.editable[data-role="${role}"]{${d}}\n`;
+    if (d) css += `[data-role="${role}"]{${d}}\n`;
   }
   roleSheet.textContent = css;
   syncOverlayFonts();
@@ -1272,8 +1273,9 @@ function showInspector(el){
   fSize.value = parseInt(cs.fontSize) || '';
   fWeight.value = cs.fontWeight || '400';
   fColor.value = rgb2hex(cs.color) || '#111111';
-  fSpacing.value = cs.letterSpacing === 'normal' ? '' : parseFloat(cs.letterSpacing);
-  fLine.value = cs.lineHeight === 'normal' ? '' : parseFloat(cs.lineHeight);
+  const fontPixels = parseFloat(cs.fontSize) || 16;
+  fSpacing.value = cs.letterSpacing === 'normal' ? '' : (parseFloat(cs.letterSpacing) / fontPixels).toFixed(3);
+  fLine.value = cs.lineHeight === 'normal' ? '' : (parseFloat(cs.lineHeight) / fontPixels).toFixed(3);
   fItalic.checked = cs.fontStyle === 'italic';
   fUpper.checked = cs.textTransform === 'uppercase';
   inspector.classList.add('on');
@@ -1705,7 +1707,7 @@ const EXPORT_CONTROL_SELECTOR = [
 ].join(',');
 
 function setBusy(on){
-  document.querySelectorAll('#exportHtmlBtn, #exportHtmlBtn2, #exportGithubBtn, #exportGithubBtn2').forEach(button => {
+  document.querySelectorAll('#saveHtmlBtn, #saveHtmlBtn2, #exportHtmlBtn, #exportHtmlBtn2, #exportGithubBtn, #exportGithubBtn2').forEach(button => {
     button.disabled = on;
   });
 }
@@ -1779,6 +1781,49 @@ async function buildExportHTML(){
   return '<!DOCTYPE html>\n' + clone.outerHTML;
 }
 
+function prepareEditableClone(){
+  const savedTiming = normaliseHeroTiming();
+  const clone = document.documentElement.cloneNode(true);
+  const cloneBody = clone.querySelector('body');
+  clone.removeAttribute('data-exported');
+  clone.removeAttribute('data-github-portfolio');
+  clone.setAttribute('data-hero-timing', String(savedTiming));
+  if (cloneBody) {
+    cloneBody.classList.remove('editing', 'exporting');
+    cloneBody.style.overflow = '';
+  }
+  clone.querySelectorAll('.item').forEach(item => {
+    item.classList.remove('in-view');
+    item.style.removeProperty('opacity');
+    item.style.removeProperty('transform');
+  });
+  clone.querySelector('#heroTrack')?.style.removeProperty('transform');
+  const clonedCursor = clone.querySelector('#customCursor');
+  if (clonedCursor) {
+    clonedCursor.removeAttribute('style');
+    clonedCursor.classList.remove('over-media', 'over-image', 'over-link');
+  }
+  clone.querySelectorAll('[data-cursor-bound],[data-lightbox-bound],[data-bound],[data-sync-bound]').forEach(element => {
+    element.removeAttribute('data-cursor-bound');
+    element.removeAttribute('data-lightbox-bound');
+    element.removeAttribute('data-bound');
+    element.removeAttribute('data-sync-bound');
+  });
+  clone.querySelectorAll('.editable').forEach(el => {
+    el.setAttribute('contenteditable', 'false');
+    el.style.outline = '';
+  });
+  return clone;
+}
+async function saveEditableHTML(){
+  setBusy(true);
+  try {
+    const clone = prepareEditableClone();
+    download(new Blob(['<!DOCTYPE html>\n', clone.outerHTML], { type: 'text/html' }), 'altrune_portfolio_editable.html');
+  } finally {
+    setBusy(false);
+  }
+}
 async function exportHTML(){
   setBusy(true);
   try {
@@ -1788,6 +1833,10 @@ async function exportHTML(){
     setBusy(false);
   }
 }
+const saveHtmlBtn = document.getElementById('saveHtmlBtn');
+const saveHtmlBtn2 = document.getElementById('saveHtmlBtn2');
+if (saveHtmlBtn) saveHtmlBtn.addEventListener('click', saveEditableHTML);
+if (saveHtmlBtn2) saveHtmlBtn2.addEventListener('click', saveEditableHTML);
 const exportHtmlBtn = document.getElementById('exportHtmlBtn');
 const exportHtmlBtn2 = document.getElementById('exportHtmlBtn2');
 if (exportHtmlBtn) exportHtmlBtn.addEventListener('click', exportHTML);
@@ -2077,7 +2126,44 @@ async function ensureGitHubMediaWorkflow(token, repoPath, branch){
   );
 }
 
-async function buildGitHubHTML({ owner, repo, branch }){
+async function getGithubLogoAsset(){
+  const sourceLogo = document.getElementById('logoImg');
+  if (!sourceLogo || !sourceLogo.getAttribute('src') || getComputedStyle(sourceLogo).display === 'none') return null;
+  let dataURI = sourceLogo.getAttribute('src') || '';
+  if (!dataURI.startsWith('data:')) {
+    try {
+      const response = await fetch(sourceLogo.src);
+      const blob = await response.blob();
+      dataURI = await new Promise(resolve => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.readAsDataURL(blob);
+      });
+    } catch (error) {
+      return null;
+    }
+  }
+  const match = dataURI.match(/^data:([^;,]+)(;base64)?,(.*)$/s);
+  if (!match) return null;
+  const mime = match[1].toLowerCase();
+  const extensionMap = {
+    'image/png': 'png', 'image/jpeg': 'jpg', 'image/webp': 'webp',
+    'image/gif': 'gif', 'image/svg+xml': 'svg', 'image/avif': 'avif'
+  };
+  const content = match[2] ? match[3] : utf8Base64(decodeURIComponent(match[3]));
+  return { path: `logo/logo.${extensionMap[mime] || 'png'}`, content };
+}
+async function uploadGithubLogo(token, repoPath, branch, logo){
+  if (!logo) return;
+  const existing = await githubRequest(`${repoPath}/contents/${logo.path}?ref=${encodeURIComponent(branch)}`, {
+    token,
+    allowStatuses: [404]
+  });
+  const body = { message: 'Upload portfolio logo', content: logo.content, branch };
+  if (existing.response.ok && existing.data?.sha) body.sha = existing.data.sha;
+  await githubRequest(`${repoPath}/contents/${logo.path}`, { token, method: 'PUT', body });
+}
+async function buildGitHubHTML({ owner, repo, branch, logoPath = '' }){
   const clone = preparePublicClone();
   clone.dataset.githubPortfolio = 'folder-sync';
   const gallery = clone.querySelector('#cols');
@@ -2090,8 +2176,19 @@ async function buildGitHubHTML({ owner, repo, branch }){
   clone.querySelectorAll('img[src^="data:"]').forEach(image => image.removeAttribute('src'));
   const cloneLogo = clone.querySelector('#logoImg');
   const cloneBrand = clone.querySelector('.brand');
-  if (cloneLogo) { cloneLogo.removeAttribute('src'); cloneLogo.style.display = 'none'; }
-  if (cloneBrand) cloneBrand.style.display = '';
+  if (cloneLogo) {
+    cloneLogo.removeAttribute('src');
+    if (logoPath) {
+      cloneLogo.src = logoPath;
+      cloneLogo.style.display = 'block';
+      if (cloneBrand) cloneBrand.style.display = 'none';
+    } else {
+      cloneLogo.style.display = 'none';
+      if (cloneBrand) cloneBrand.style.display = '';
+    }
+  } else if (cloneBrand) {
+    cloneBrand.style.display = '';
+  }
 
   let config = clone.querySelector('#githubPortfolioConfig');
   if (!config) {
@@ -2156,9 +2253,10 @@ if (githubPublish) githubPublish.addEventListener('click', async () => {
     }
     if (repository.private) throw new Error('Automatic image-folder discovery requires a public repository.');
     const branch = repository.default_branch || 'main';
+    const logoAsset = await getGithubLogoAsset();
 
     setGithubStatus('Preparing the lightweight GitHub Pages site…');
-    const githubHTML = await buildGitHubHTML({ owner, repo, branch });
+    const githubHTML = await buildGitHubHTML({ owner, repo, branch, logoPath: logoAsset?.path || '' });
 
     setGithubStatus('Uploading index.html without embedded portfolio media…');
     const existingFile = await githubRequest(
@@ -2176,6 +2274,10 @@ if (githubPublish) githubPublish.addEventListener('click', async () => {
       method: 'PUT',
       body: contentPayload
     });
+    if (logoAsset) {
+      setGithubStatus('Uploading logo to the logo folder…');
+      await uploadGithubLogo(token, repoPath, branch, logoAsset);
+    }
 
     setGithubStatus('Checking the images folder without touching existing files…');
     await ensureGitHubImageFolder(token, repoPath, branch);
@@ -2338,9 +2440,11 @@ function makeGithubGalleryItem(entry, index){
   overlay.className = 'item-overlay';
   const name = document.createElement('span');
   name.className = 'ov-name';
+  name.dataset.role = 'title';
   name.textContent = entry.title;
   const meta = document.createElement('span');
   meta.className = 'ov-meta';
+  meta.dataset.role = 'meta';
   meta.textContent = [entry.client, entry.location, entry.year].filter(Boolean).join(' — ');
   overlay.append(name, meta);
   wrap.appendChild(overlay);
@@ -2420,7 +2524,8 @@ async function loadGithubFolderPortfolio(){
 }
 loadGithubFolderPortfolio();
 
-</script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a312868fff7e2974',t:'MTc4Nzc0NDA0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
 
-<hal-kvvgxabakahj></hal-kvvgxabakahj></body></html>
+</script>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a312cb73ebb42141',t:'MTc4Nzc0Njg3MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
+
+<uxo-wfutrslfqito></uxo-wfutrslfqito></body></html>
