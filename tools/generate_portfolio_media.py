@@ -18,7 +18,11 @@ converter = shutil.which("magick") or shutil.which("convert")
 files = {}
 
 if IMAGES.exists():
-    for source in sorted(path for path in IMAGES.rglob("*") if path.is_file()):
+    for source in sorted(
+        (path for path in IMAGES.rglob("*") if path.is_file()),
+        key=lambda p: p.stat().st_mtime,
+        reverse=True,
+    ):
         relative = source.relative_to(ROOT).as_posix()
         suffix = source.suffix.lower()
         if suffix in VIDEOS:
