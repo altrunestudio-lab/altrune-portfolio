@@ -1,158 +1,209 @@
 {
-  "version": 1,
+  "version": 2,
   "files": {
-    "images/Export 3.webp": {
-      "kind": "image"
-    },
-    "images/Scene  (2) 2026.08.03.png": {
-      "kind": "image"
-    },
-    "images/Scene  (7).png": {
-      "kind": "image"
-    },
-    "images/Interior (2) 2.png": {
-      "kind": "image"
-    },
-    "images/Interior (1) 1.png": {
-      "kind": "image"
-    },
-    "images/Scene  (3).png": {
-      "kind": "image"
-    },
-    "images/Scene  (4).png": {
-      "kind": "image"
-    },
-    "images/Scene  (5).png": {
-      "kind": "image"
-    },
-    "images/Scene  (6).png": {
-      "kind": "image"
-    },
-    "images/Scene  (1).png": {
-      "kind": "image"
-    },
-    "images/High 3.jpg": {
-      "kind": "image"
-    },
-    "images/Hi res 2 (2).png": {
-      "kind": "image"
-    },
-    "images/Hi res 1.png": {
-      "kind": "image"
-    },
-    "images/Scene 61.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 53_1.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 59.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 66.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 72.png": {
-      "kind": "image"
-    },
-    "images/Scene 6_1.png": {
-      "kind": "image"
-    },
-    "images/Scene 13.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 12.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 9_2.png": {
-      "kind": "image"
-    },
     "images/01 (1).jpg": {
-      "kind": "image"
-    },
-    "images/60 new (1).jpg": {
-      "kind": "image"
-    },
-    "images/ReScene 148.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 130_1.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 4(3).png": {
-      "kind": "image"
-    },
-    "images/scene23_5.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 57(2).jpg": {
-      "kind": "image"
-    },
-    "images/Clip 1_00000090(3).png": {
-      "kind": "image"
-    },
-    "images/4.jpg": {
-      "kind": "image"
-    },
-    "images/5.jpg": {
-      "kind": "image"
-    },
-    "images/6.jpg": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/04e1767694450915de09.webp"
     },
     "images/1.jpg": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/2b28cdc6205e26fef6a2.webp"
     },
-    "images/View  (2).jpg": {
-      "kind": "image"
+    "images/4.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/8a9fb6b250e72257fcf2.webp"
     },
-    "images/Scene 26_upscale.png": {
-      "kind": "image"
+    "images/5.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/68b8f24ce8e1298f2067.webp"
     },
-    "images/Scene 26.jpg": {
-      "kind": "image"
+    "images/6.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/0beb430736f3251e5ea1.webp"
     },
-    "images/Scene 4_5.jpg": {
-      "kind": "image"
-    },
-    "images/Scene 23.png": {
-      "kind": "image"
-    },
-    "images/Scene 22.png": {
-      "kind": "image"
-    },
-    "images/E.png": {
-      "kind": "image"
-    },
-    "images/D.png": {
-      "kind": "image"
-    },
-    "images/C.png": {
-      "kind": "image"
+    "images/60 new (1).jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/3893d90313c9704837fd.webp"
     },
     "images/B.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/834d375325a3e0bc626b.webp"
     },
-    "images/enhanced-image (1).png": {
-      "kind": "image"
+    "images/C.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/a9479eb9bb7f3ee1e3b9.webp"
     },
-    "images/D5_Image_20231016_190807.png": {
-      "kind": "image"
+    "images/Clip 1_00000090(3).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/a35be59d1f784a4a70e2.webp"
     },
-    "images/D5_Image 50_20231010_133718.png": {
-      "kind": "image"
-    },
-    "images/D5_Image 54_20231010_131045.png": {
-      "kind": "image"
+    "images/D.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/d371d558e8ca0031eed3.webp"
     },
     "images/D5_Image 12_20230618_234802.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/274348f24c9ac4e445a9.webp"
+    },
+    "images/D5_Image 50_20231010_133718.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/05a6d2cfe84a3f7fcd64.webp"
+    },
+    "images/D5_Image 54_20231010_131045.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/eb2c9bea1ce8b8ef19cf.webp"
     },
     "images/D5_Image 7_20230412_130947.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/4870a91a555ee2168444.webp"
     },
     "images/D5_Image_20230316_184515.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/d2e329db723f17286d8f.webp"
+    },
+    "images/D5_Image_20231016_190807.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/300a2a969f0c12b851b0.webp"
+    },
+    "images/E.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/7dd1969453dbbdceea20.webp"
+    },
+    "images/Export 3.webp": {
+      "kind": "image",
+      "preview": ".portfolio-media/746851eb8eaad2885aef.webp"
+    },
+    "images/Hi res 1.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/11be9e89af6c65c3ebc1.webp"
+    },
+    "images/Hi res 2 (2).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/6eee75383b7098c19990.webp"
+    },
+    "images/High 3.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/9a79f7d7e7f820bce6ea.webp"
+    },
+    "images/Interior (1) 1.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/0a03986dc61d56969dab.webp"
+    },
+    "images/Interior (2) 2.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/d3f6dfc43b0f1d19702a.webp"
+    },
+    "images/ReScene 148.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/382b00cbbfd472d2f414.webp"
+    },
+    "images/Scene  (1).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/0028b0211ad113c03c8c.webp"
+    },
+    "images/Scene  (2) 2026.08.03.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/7fe7531952571aae2524.webp"
+    },
+    "images/Scene  (3).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/ef3d1403ca8cde040fa4.webp"
+    },
+    "images/Scene  (4).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/17c60fbe0d42acb40603.webp"
+    },
+    "images/Scene  (5).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/924452edebdf53c01f24.webp"
+    },
+    "images/Scene  (6).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/2f7974e93db711187ba9.webp"
+    },
+    "images/Scene  (7).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/a9a9f00f96af43b3a78d.webp"
+    },
+    "images/Scene 12.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/41ed31dbf969f9ad9a8a.webp"
+    },
+    "images/Scene 13.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/9fc467ea9e8c92149adf.webp"
+    },
+    "images/Scene 130_1.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/4c6cd4aa24d12882d554.webp"
+    },
+    "images/Scene 22.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/46fb82797cb7f1751f7d.webp"
+    },
+    "images/Scene 23.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/6bcd648dda536232c523.webp"
+    },
+    "images/Scene 26.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/324d67fe6f7ef92dee2d.webp"
+    },
+    "images/Scene 26_upscale.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/620134afc5d7ed0f2840.webp"
+    },
+    "images/Scene 4(3).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/eb903722be91947cbd65.webp"
+    },
+    "images/Scene 4_5.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/b0b6d0045208e7e10afe.webp"
+    },
+    "images/Scene 53_1.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/c4060464525b251bc9e2.webp"
+    },
+    "images/Scene 57(2).jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/e757af7c918bf650d2fc.webp"
+    },
+    "images/Scene 59.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/9412d3a82d4e83eb834c.webp"
+    },
+    "images/Scene 61.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/77f252939fe737a516a5.webp"
+    },
+    "images/Scene 66.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/a03dfe4ca763a1dc49ab.webp"
+    },
+    "images/Scene 6_1.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/510e8db18d78b3b5be21.webp"
+    },
+    "images/Scene 72.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/d3094c2efa833fc81b03.webp"
+    },
+    "images/Scene 9_2.png": {
+      "kind": "image",
+      "preview": ".portfolio-media/75c8920a9bb940f8d38a.webp"
+    },
+    "images/View  (2).jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/477f60bab1f1341ea322.webp"
+    },
+    "images/enhanced-image (1).png": {
+      "kind": "image",
+      "preview": ".portfolio-media/462d7d455804e8687152.webp"
+    },
+    "images/scene23_5.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/899e15c4a4beb573154c.webp"
     }
   }
 }
