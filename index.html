@@ -859,12 +859,55 @@ html[data-exported="true"] .cap {
   text-align: center;
   text-transform: uppercase;
 }
+
+
+/* ================= MEDIA-FOLDER FORMAT SUPPORT ================= */
+.img-wrap video {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  background: #efede7;
+  transform: scale(1.001);
+  transition: transform 1.1s cubic-bezier(.2,.7,.2,1), filter .6s ease;
+  filter: grayscale(.12) saturate(.96);
+}
+.img-wrap:hover video { transform: scale(1.05); filter: grayscale(0) saturate(1.03); }
+.hero-slide video,
+.lb video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  background: #111;
+}
+.lb video {
+  max-width: 90vw;
+  max-height: 88vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.img-wrap.media-unavailable {
+  min-height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #efede7;
+}
+.github-media-fallback {
+  padding: 20px;
+  color: #6b6b66;
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .1em;
+  line-height: 1.5;
+  text-align: center;
+  text-transform: uppercase;
+}
 </style>
-<style id="roleStyles">.editable[data-role="title"]{font-family:Georgia, serif;color:#fb1313;}
-.editable[data-role="cta"]{font-family:"DM Sans", Helvetica, sans-serif;}
-.editable[data-role="strapline"]{font-family:"DM Sans", Helvetica, sans-serif;font-weight:500;color:#e72323;}
-</style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images"}</script></head>
-<body style="" class="">
+<style id="roleStyles"></style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json"}</script></head>
+<body>
 <div aria-hidden="true" class="custom-cursor" id="customCursor"><div class="cursor-arrow"><svg aria-hidden="true" fill="none" viewBox="0 0 24 24"><path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div></div>
 <header>
 <div class="brand-wrap">
@@ -894,13 +937,13 @@ html[data-exported="true"] .cap {
 <div class="hero-dots" id="heroDots"></div>
 </div>
 <div class="hero-caption">
-<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">Twin Towers</h1>
+<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">Vertical Garden</h1>
 <div class="hero-meta">
-<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Vela Works</span>
+<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Halo Studio</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">New York, USA</span>
+<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Singapore</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2023</span>
+<span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2024</span>
 </div>
 </div>
 </section>
@@ -920,7 +963,7 @@ html[data-exported="true"] .cap {
 </main>
 <footer id="contact">
 <div class="footer-top">
-<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><a href="/cdn-cgi/l/email-protection#32535e4640475c57414647565b5d72555f535b5e1c515d5f">Let's talk — <span class="__cf_email__" data-cfemail="b8d9d4cccacdd6ddcbcccddcd1d7f8dfd5d9d1d496dbd7d5">[email&nbsp;protected]</span></a></p>
+<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><a href="/cdn-cgi/l/email-protection#5839342c2a2d363d2b2c2d3c3137183f35393134763b3735">Let's talk — <span class="__cf_email__" data-cfemail="fe9f928a8c8b909b8d8a8b9a9791be99939f9792d09d9193">[email&nbsp;protected]</span></a></p>
 
 </div>
 <div class="footer-bottom">
@@ -930,7 +973,7 @@ html[data-exported="true"] .cap {
       &nbsp;·&nbsp;
       <a href="https://kulean.artstation.com/" target="_blank">Artstation</a>
       &nbsp;·&nbsp;
-      <a href="/cdn-cgi/l/email-protection#5f3e332b2d2a313a2c2b2a3b36301f38323e3633713c3032"><span class="__cf_email__" data-cfemail="3e5f524a4c4b505b4d4a4b5a57517e59535f5752105d5153">[email&nbsp;protected]</span></a>
+      <a href="/cdn-cgi/l/email-protection#9dfcf1e9efe8f3f8eee9e8f9f4f2ddfaf0fcf4f1b3fef2f0"><span class="__cf_email__" data-cfemail="c1a0adb5b3b4afa4b2b5b4a5a8ae81a6aca0a8adefa2aeac">[email&nbsp;protected]</span></a>
 </span>
 </div>
 </footer>
@@ -939,9 +982,10 @@ html[data-exported="true"] .cap {
 
 <div class="lb" id="lb" onclick="closeLB()">
 <button class="lb-close" onclick="closeLB()">close ×</button>
-<img alt="" id="lb-img">
-</div>
+<img alt="" id="lb-img" src="">
+<video controls="" id="lb-video" playsinline="" style="display:none"></video></div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
 
 
 
@@ -1005,17 +1049,38 @@ if ('IntersectionObserver' in window) {
 /* ================= LIGHTBOX ================= */
 function openLB(wrap){
   if (document.body.classList.contains('editing')) return;
-  const img = wrap && wrap.querySelector('img');
+  const media = wrap && wrap.querySelector('img, video');
   const lightbox = document.getElementById('lb');
   const lightboxImg = document.getElementById('lb-img');
-  if (!img || !lightbox || !lightboxImg) return;
-  lightboxImg.src = img.src;
+  const lightboxVideo = document.getElementById('lb-video');
+  if (!media || !lightbox) return;
+  const isVideo = media.tagName === 'VIDEO';
+  if (lightboxImg) {
+    lightboxImg.style.display = isVideo ? 'none' : 'block';
+    if (!isVideo) lightboxImg.src = media.currentSrc || media.src;
+  }
+  if (lightboxVideo) {
+    lightboxVideo.style.display = isVideo ? 'block' : 'none';
+    if (isVideo) {
+      lightboxVideo.src = media.currentSrc || media.src;
+      lightboxVideo.muted = false;
+      lightboxVideo.play().catch(() => {});
+    } else {
+      lightboxVideo.pause();
+      lightboxVideo.removeAttribute('src');
+    }
+  }
   lightbox.classList.add('open');
   document.body.style.overflow = 'hidden';
 }
 function closeLB(){
   const lightbox = document.getElementById('lb');
+  const lightboxVideo = document.getElementById('lb-video');
   if (lightbox) lightbox.classList.remove('open');
+  if (lightboxVideo) {
+    lightboxVideo.pause();
+    lightboxVideo.removeAttribute('src');
+  }
   document.body.style.overflow = '';
 }
 document.addEventListener('keydown', e => {
@@ -1865,33 +1930,145 @@ async function configureGitHubPages(token, repoPath, owner, repo, branch){
 }
 
 const GITHUB_IMAGE_FOLDER = 'images';
-const GITHUB_IMAGE_README = `# Portfolio images
+const GITHUB_IMAGE_MARKER = `${GITHUB_IMAGE_FOLDER}/README.md`;
+const GITHUB_MEDIA_WORKFLOW_PATH = '.github/workflows/portfolio-media.yml';
+const GITHUB_MEDIA_GENERATOR_PATH = 'tools/generate_portfolio_media.py';
+const GITHUB_IMAGE_MARKER_CONTENT = `# Portfolio media folder
 
-Upload portfolio images to this folder. The website discovers them automatically after GitHub Pages rebuilds.
+Upload media here. The site reads this folder but never deletes, renames, edits, or moves your uploaded files.
 
 ## Filename format
 
-- Gallery card: \`The spire - london.jpg\`
-- Hero slide: \`The spire - london - hero.jpg\`
+- Gallery: \`Project name - Client - Location - Year.ext\`
+- Hero: \`Project name - Client - Location - Year - hero.ext\`
 
-Everything before the first \` - \` is the project name. Everything after it is the location. Add \` - hero\` immediately before the extension to include that image in the top hero slideshow.
+Examples:
 
-Supported formats: JPG, JPEG, PNG, WEBP, AVIF and GIF.
+- \`The spire - Fjord Studio - London - 2025.jpg\`
+- \`The spire - Fjord Studio - London - 2025 - hero.jpg\`
+
+JPG, PNG, JPEG, WEBP, GIF, WEBM, TIFF and many other formats are accepted. Browser-incompatible images receive generated previews outside this folder, in \`.portfolio-media/\`, so originals remain untouched.
+`;
+const GITHUB_MEDIA_WORKFLOW = `name: Build portfolio media previews
+
+on:
+  push:
+    paths:
+      - 'images/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  previews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install image conversion support
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+      - name: Build browser-safe media previews
+        run: python tools/generate_portfolio_media.py
+      - name: Commit generated previews only
+        run: |
+          git config user.name "portfolio-media-bot"
+          git config user.email "actions@github.com"
+          git add media-manifest.json .portfolio-media
+          git diff --cached --quiet || git commit -m "Update portfolio media previews"
+          git push
+`;
+const GITHUB_MEDIA_GENERATOR = `from pathlib import Path
+import hashlib
+import json
+import shutil
+import subprocess
+
+ROOT = Path(__file__).resolve().parents[1]
+IMAGES = ROOT / "images"
+PREVIEWS = ROOT / ".portfolio-media"
+MANIFEST = ROOT / "media-manifest.json"
+
+WEB_IMAGES = {".avif", ".gif", ".jpeg", ".jpg", ".jfif", ".png", ".svg", ".webp"}
+VIDEOS = {".3g2", ".3gp", ".avi", ".m4v", ".mkv", ".mov", ".mp4", ".mpeg", ".mpg", ".ogv", ".ogg", ".webm"}
+IMAGE_FORMATS = WEB_IMAGES | {".bmp", ".dib", ".heic", ".heif", ".ico", ".jp2", ".jxl", ".psd", ".raw", ".tga", ".tif", ".tiff", ".arw", ".cr2", ".dng", ".nef", ".orf", ".raf"}
+
+PREVIEWS.mkdir(exist_ok=True)
+converter = shutil.which("magick") or shutil.which("convert")
+files = {}
+
+if IMAGES.exists():
+    for source in sorted(path for path in IMAGES.rglob("*") if path.is_file()):
+        relative = source.relative_to(ROOT).as_posix()
+        suffix = source.suffix.lower()
+        if suffix in VIDEOS:
+            files[relative] = {"kind": "video"}
+            continue
+        if suffix not in IMAGE_FORMATS:
+            continue
+        record = {"kind": "image"}
+        # Web-native images remain direct. Other formats receive a WebP preview
+        # outside /images so original source files are never edited or removed.
+        if suffix not in WEB_IMAGES and converter:
+            digest = hashlib.sha256(relative.encode("utf-8")).hexdigest()[:20]
+            preview = PREVIEWS / f"{digest}.webp"
+            try:
+                subprocess.run([
+                    converter, f"{source}[0]", "-auto-orient", "-thumbnail", "2400x2400>",
+                    "-quality", "88", str(preview)
+                ], check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                record["preview"] = preview.relative_to(ROOT).as_posix()
+            except Exception:
+                pass
+        files[relative] = record
+
+MANIFEST.write_text(json.dumps({"version": 1, "files": files}, indent=2) + "\\n", encoding="utf-8")
 `;
 
+async function ensureGitHubFileIfMissing(token, repoPath, branch, path, content, message){
+  const existing = await githubRequest(`${repoPath}/contents/${path}?ref=${encodeURIComponent(branch)}`, {
+    token,
+    allowStatuses: [404]
+  });
+  if (existing.response.ok) return false;
+  await githubRequest(`${repoPath}/contents/${path}`, {
+    token,
+    method: 'PUT',
+    body: { message, content: utf8Base64(content), branch }
+  });
+  return true;
+}
 async function ensureGitHubImageFolder(token, repoPath, branch){
-  const readmePath = `${repoPath}/contents/${GITHUB_IMAGE_FOLDER}/README.md?ref=${encodeURIComponent(branch)}`;
-  const existing = await githubRequest(readmePath, { token, allowStatuses: [404] });
-  if (existing.response.ok) return;
-  await githubRequest(`${repoPath}/contents/${GITHUB_IMAGE_FOLDER}/README.md`, {
+  const existingFolder = await githubRequest(`${repoPath}/contents/${GITHUB_IMAGE_FOLDER}?ref=${encodeURIComponent(branch)}`, {
+    token,
+    allowStatuses: [404]
+  });
+  // Existing folder: do not add, edit, rename or delete any file inside it.
+  if (existingFolder.response.ok) return false;
+  await githubRequest(`${repoPath}/contents/${GITHUB_IMAGE_MARKER}`, {
     token,
     method: 'PUT',
     body: {
       message: 'Create portfolio images folder',
-      content: utf8Base64(GITHUB_IMAGE_README),
+      content: utf8Base64(GITHUB_IMAGE_MARKER_CONTENT),
       branch
     }
   });
+  return true;
+}
+async function ensureGitHubMediaWorkflow(token, repoPath, branch){
+  await ensureGitHubFileIfMissing(
+    token, repoPath, branch, GITHUB_MEDIA_GENERATOR_PATH,
+    GITHUB_MEDIA_GENERATOR, 'Add portfolio media preview generator'
+  );
+  await ensureGitHubFileIfMissing(
+    token, repoPath, branch, GITHUB_MEDIA_WORKFLOW_PATH,
+    GITHUB_MEDIA_WORKFLOW, 'Add portfolio media preview workflow'
+  );
 }
 
 async function buildGitHubHTML({ owner, repo, branch }){
@@ -1921,7 +2098,8 @@ async function buildGitHubHTML({ owner, repo, branch }){
     owner,
     repo,
     branch,
-    imagesPath: GITHUB_IMAGE_FOLDER
+    imagesPath: GITHUB_IMAGE_FOLDER,
+    manifestPath: 'media-manifest.json'
   });
   return '<!DOCTYPE html>\n' + clone.outerHTML;
 }
@@ -1933,7 +2111,7 @@ if (githubPublish) githubPublish.addEventListener('click', async () => {
     return;
   }
   if (githubVisibility?.value === 'private') {
-    setGithubStatus('Choose a public repository. The site needs anonymous GitHub API access to discover images in the images folder.', 'error');
+    setGithubStatus('Choose a public repository. The live site needs public GitHub API access to discover your images folder.', 'error');
     return;
   }
 
@@ -1965,18 +2143,18 @@ if (githubPublish) githubPublish.addEventListener('click', async () => {
         body: {
           name: repo,
           private: false,
-          description: 'Published portfolio website with image-folder sync',
+          description: 'Published portfolio website with non-destructive image-folder sync',
           auto_init: false
         }
       })).data;
     }
-    if (repository.private) throw new Error('Automatic images-folder discovery requires a public repository.');
+    if (repository.private) throw new Error('Automatic image-folder discovery requires a public repository.');
     const branch = repository.default_branch || 'main';
 
     setGithubStatus('Preparing the lightweight GitHub Pages site…');
     const githubHTML = await buildGitHubHTML({ owner, repo, branch });
 
-    setGithubStatus('Uploading index.html without embedded portfolio images…');
+    setGithubStatus('Uploading index.html without embedded portfolio media…');
     const existingFile = await githubRequest(
       `${repoPath}/contents/index.html?ref=${encodeURIComponent(branch)}`,
       { token, allowStatuses: [404] }
@@ -1993,8 +2171,15 @@ if (githubPublish) githubPublish.addEventListener('click', async () => {
       body: contentPayload
     });
 
-    setGithubStatus('Creating the images folder and filename guide…');
+    setGithubStatus('Checking the images folder without touching existing files…');
     await ensureGitHubImageFolder(token, repoPath, branch);
+    let mediaWorkflowWarning = '';
+    setGithubStatus('Adding non-destructive TIFF/format preview support…');
+    try {
+      await ensureGitHubMediaWorkflow(token, repoPath, branch);
+    } catch (error) {
+      mediaWorkflowWarning = `The site was published, but preview automation could not be installed (${error.message}). Web-native media will work; add Actions write permission and publish again for TIFF/RAW previews.`;
+    }
 
     let pages = null;
     if (githubEnablePages?.checked) {
@@ -2011,10 +2196,12 @@ if (githubPublish) githubPublish.addEventListener('click', async () => {
     const liveUrl = pages?.url;
     const repositoryUrl = repository.html_url || `https://github.com/${owner}/${repo}`;
     if (liveUrl) {
-      setGithubStatus(pages.warning || 'Published. Upload images to the images folder; the live site will discover them automatically after Pages rebuilds.', pages.warning ? 'warning' : 'success');
+      const message = pages.warning || mediaWorkflowWarning || 'Published. Upload media to images/; originals stay untouched and the live site rebuilds from the filenames.';
+      setGithubStatus(message, (pages.warning || mediaWorkflowWarning) ? 'warning' : 'success');
       setGithubResult(liveUrl, 'Open live GitHub Pages site');
     } else {
-      setGithubStatus(pages?.warning || 'Portfolio shell uploaded. Add images to the images folder in the repository.', pages?.warning ? 'warning' : 'success');
+      const message = pages?.warning || mediaWorkflowWarning || 'Portfolio shell uploaded. Add media to images/ in the repository.';
+      setGithubStatus(message, (pages?.warning || mediaWorkflowWarning) ? 'warning' : 'success');
       setGithubResult(repositoryUrl, 'Open GitHub repository and images folder');
     }
   } catch (error) {
@@ -2027,7 +2214,8 @@ if (githubPublish) githubPublish.addEventListener('click', async () => {
 });
 
 /* ================= GITHUB PAGES IMAGE-FOLDER SYNC ================= */
-const GITHUB_IMAGE_EXTENSIONS = /\.(avif|gif|jpe?g|png|webp)$/i;
+const GITHUB_VIDEO_EXTENSIONS = /\.(3g2|3gp|avi|m4v|mkv|mov|mp4|mpeg|mpg|ogv|ogg|webm)$/i;
+const GITHUB_IMAGE_EXTENSIONS = /\.(arw|avif|bmp|cr2|dib|dng|gif|heic|heif|ico|jpe?g|jfif|jp2|jxl|nef|orf|png|psd|raf|raw|svg|tga|tif|tiff|webp)$/i;
 
 function readGithubPortfolioConfig(){
   const node = document.getElementById('githubPortfolioConfig');
@@ -2039,20 +2227,47 @@ function githubAssetUrl(path){
   const encoded = String(path).split('/').map(segment => encodeURIComponent(segment)).join('/');
   return new URL(encoded, document.baseURI).href;
 }
-function parseGithubImageFilename(path){
+async function loadGithubMediaManifest(config){
+  const path = config.manifestPath || 'media-manifest.json';
+  try {
+    const response = await fetch(githubAssetUrl(path), { cache: 'no-store' });
+    if (!response.ok) return {};
+    const manifest = await response.json();
+    return manifest.files || {};
+  } catch (error) {
+    return {};
+  }
+}
+function parseGithubMediaFilename(path, manifestEntry = {}){
   const file = decodeURIComponent(String(path).split('/').pop() || '');
   const base = file.replace(/\.[^/.]+$/, '');
   const parts = base.split(/\s+-\s+/).map(part => part.trim()).filter(Boolean);
   const isHero = parts.length > 1 && parts[parts.length - 1].toLowerCase() === 'hero';
   if (isHero) parts.pop();
-  const title = parts.shift() || base;
-  const location = parts.join(' - ');
+
+  let title = base, client = '', location = '', year = '';
+  if (parts.length >= 4) {
+    [title, client, location] = parts;
+    year = parts.slice(3).join(' - ');
+  } else if (parts.length === 3) {
+    [title, client, location] = parts;
+  } else if (parts.length === 2) {
+    // Backwards-compatible: Project - Location.ext
+    [title, location] = parts;
+  } else if (parts.length === 1) {
+    [title] = parts;
+  }
+  const kind = manifestEntry.kind || (GITHUB_VIDEO_EXTENSIONS.test(path) ? 'video' : 'image');
   return {
     path,
     title,
+    client,
     location,
+    year,
     isHero,
-    key: `${title.toLocaleLowerCase()}|${location.toLocaleLowerCase()}`
+    kind,
+    preview: manifestEntry.preview || '',
+    key: `${title.toLocaleLowerCase()}|${client.toLocaleLowerCase()}|${location.toLocaleLowerCase()}|${year.toLocaleLowerCase()}`
   };
 }
 function githubRevealItem(item){
@@ -2070,21 +2285,60 @@ function githubRevealItem(item){
   }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
   observer.observe(item);
 }
+function githubMediaSource(entry){
+  return githubAssetUrl(entry.preview || entry.path);
+}
+function showGithubMediaFallback(wrap, entry){
+  if (wrap.querySelector('.github-media-fallback')) return;
+  wrap.classList.add('media-unavailable');
+  const fallback = document.createElement('span');
+  fallback.className = 'github-media-fallback';
+  fallback.textContent = `${entry.title} — preview unavailable`;
+  wrap.appendChild(fallback);
+}
+function makeGithubMediaElement(entry, className = ''){
+  const source = githubMediaSource(entry);
+  let media;
+  if (entry.kind === 'video') {
+    media = document.createElement('video');
+    media.src = source;
+    media.autoplay = true;
+    media.muted = true;
+    media.loop = true;
+    media.playsInline = true;
+    media.preload = 'metadata';
+  } else {
+    media = document.createElement('img');
+    media.src = source;
+    media.alt = entry.title;
+    media.loading = 'lazy';
+  }
+  if (className) media.className = className;
+  media.addEventListener('error', () => {
+    const wrap = media.closest('.img-wrap, .hero-slide');
+    if (wrap?.classList.contains('img-wrap')) showGithubMediaFallback(wrap, entry);
+  });
+  return media;
+}
 function makeGithubGalleryItem(entry, index){
   const figure = document.createElement('figure');
   figure.className = 'item';
   figure.dataset.id = `github-${index + 1}`;
   figure.dataset.featured = 'false';
-  const source = githubAssetUrl(entry.path);
-  figure.innerHTML = `
-    <div class="img-wrap">
-      <img src="${source}" alt="${escapeHTML(entry.title)}" loading="lazy">
-      <div class="item-overlay">
-        <span class="ov-name">${escapeHTML(entry.title)}</span>
-        <span class="ov-meta">${escapeHTML(entry.location)}</span>
-      </div>
-    </div>`;
-  const wrap = figure.querySelector('.img-wrap');
+  const wrap = document.createElement('div');
+  wrap.className = 'img-wrap';
+  wrap.appendChild(makeGithubMediaElement(entry));
+  const overlay = document.createElement('div');
+  overlay.className = 'item-overlay';
+  const name = document.createElement('span');
+  name.className = 'ov-name';
+  name.textContent = entry.title;
+  const meta = document.createElement('span');
+  meta.className = 'ov-meta';
+  meta.textContent = [entry.client, entry.location, entry.year].filter(Boolean).join(' — ');
+  overlay.append(name, meta);
+  wrap.appendChild(overlay);
+  figure.appendChild(wrap);
   bindCursor(wrap);
   wrap.addEventListener('click', () => openLB(wrap));
   githubRevealItem(figure);
@@ -2097,15 +2351,17 @@ function renderGithubHeroSlides(entries){
     const slide = document.createElement('div');
     slide.className = 'hero-slide';
     slide.dataset.name = entry.title;
+    slide.dataset.client = entry.client;
     slide.dataset.location = entry.location;
-    slide.innerHTML = `<img src="${githubAssetUrl(entry.path)}" alt="${escapeHTML(entry.title)}">`;
+    slide.dataset.year = entry.year;
+    slide.appendChild(makeGithubMediaElement(entry));
     heroTrack.appendChild(slide);
   });
   heroIdx = 0;
   heroTrack.style.transform = 'translateX(0%)';
   if (heroMedia) {
     heroMedia.classList.toggle('is-github-empty', !entries.length);
-    heroMedia.dataset.githubEmpty = !entries.length ? 'Add a file ending in - hero.jpg to the images folder' : '';
+    heroMedia.dataset.githubEmpty = !entries.length ? 'Add Project - Client - Location - Year - hero.ext to images/' : '';
   }
   renderHeroDots();
   if (entries.length) {
@@ -2113,7 +2369,7 @@ function renderGithubHeroSlides(entries){
   } else {
     if (heroName) heroName.textContent = 'Add a hero image';
     if (hmArchitect) hmArchitect.textContent = '';
-    if (hmLocation) hmLocation.textContent = 'Project - location - hero.jpg';
+    if (hmLocation) hmLocation.textContent = 'Project - Client - Location - Year - hero.ext';
     if (hmYear) hmYear.textContent = '';
   }
   restartHeroAutoplay();
@@ -2126,39 +2382,39 @@ async function loadGithubFolderPortfolio(){
   try {
     const branch = config.branch || 'main';
     const imagesPath = String(config.imagesPath || GITHUB_IMAGE_FOLDER).replace(/^\/+|\/+$/g, '');
-    const endpoint = `${GITHUB_API}/repos/${encodeURIComponent(config.owner)}/${encodeURIComponent(config.repo)}/git/trees/${encodeURIComponent(branch)}?recursive=1`;
-    const response = await fetch(endpoint, {
-      headers: { 'Accept': 'application/vnd.github+json' },
-      cache: 'no-store'
-    });
-    if (!response.ok) throw new Error(`GitHub images folder could not be read (${response.status})`);
-    const payload = await response.json();
+    const [manifest, treeResponse] = await Promise.all([
+      loadGithubMediaManifest(config),
+      fetch(`${GITHUB_API}/repos/${encodeURIComponent(config.owner)}/${encodeURIComponent(config.repo)}/git/trees/${encodeURIComponent(branch)}?recursive=1`, {
+        headers: { 'Accept': 'application/vnd.github+json' },
+        cache: 'no-store'
+      })
+    ]);
+    if (!treeResponse.ok) throw new Error(`GitHub images folder could not be read (${treeResponse.status})`);
+    const payload = await treeResponse.json();
     const prefix = `${imagesPath}/`;
-    const images = (payload.tree || [])
-      .filter(entry => entry.type === 'blob' && entry.path.startsWith(prefix) && GITHUB_IMAGE_EXTENSIONS.test(entry.path))
-      .map(entry => parseGithubImageFilename(entry.path))
+    const media = (payload.tree || [])
+      .filter(entry => entry.type === 'blob' && entry.path.startsWith(prefix) && (GITHUB_IMAGE_EXTENSIONS.test(entry.path) || GITHUB_VIDEO_EXTENSIONS.test(entry.path)))
+      .map(entry => parseGithubMediaFilename(entry.path, manifest[entry.path] || {}))
       .sort((a, b) => b.path.localeCompare(a.path, undefined, { numeric: true, sensitivity: 'base' }));
 
     gallery.innerHTML = '';
-    images.filter(entry => !entry.isHero).forEach((entry, index) => {
+    media.filter(entry => !entry.isHero).forEach((entry, index) => {
       gallery.appendChild(makeGithubGalleryItem(entry, index));
     });
-    renderGithubHeroSlides(images.filter(entry => entry.isHero));
+    renderGithubHeroSlides(media.filter(entry => entry.isHero));
   } catch (error) {
     if (heroMedia) {
       heroMedia.classList.add('is-github-empty');
       heroMedia.dataset.githubEmpty = 'Images folder is unavailable';
     }
     if (heroName) heroName.textContent = 'Images folder unavailable';
-    if (hmLocation) hmLocation.textContent = 'Check that the repository is public and images are in /images';
+    if (hmLocation) hmLocation.textContent = 'Check that the repository is public and media is in /images';
     console.warn('GitHub image-folder sync failed', error);
   }
 }
 loadGithubFolderPortfolio();
 
-
-
 </script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a3125408cda70aea',t:'MTc4Nzc0MTk3OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
+<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a312868fff7e2974',t:'MTc4Nzc0NDA0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
 
-<lhb-ttmbojbqqcuw></lhb-ttmbojbqqcuw></body></html>
+<hku-orrzbupfqgun></hku-orrzbupfqgun></body></html>
