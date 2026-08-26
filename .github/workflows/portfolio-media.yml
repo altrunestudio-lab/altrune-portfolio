@@ -1,0 +1,32 @@
+name: Build portfolio media previews
+
+on:
+  push:
+    paths:
+      - 'images/**'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  previews:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+      - name: Install image conversion support
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y imagemagick
+      - name: Build browser-safe media previews
+        run: python tools/generate_portfolio_media.py
+      - name: Commit generated previews only
+        run: |
+          git config user.name "portfolio-media-bot"
+          git config user.email "actions@github.com"
+          git add media-manifest.json .portfolio-media
+          git diff --cached --quiet || git commit -m "Update portfolio media previews"
+          git push
