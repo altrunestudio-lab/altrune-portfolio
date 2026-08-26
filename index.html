@@ -906,13 +906,19 @@ html[data-exported="true"] .cap {
   text-transform: uppercase;
 }
 </style>
-<style id="roleStyles"></style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json"}</script></head>
-<body>
+<style id="roleStyles">.editable[data-role="cta"]{font-family:"Fraunces", Georgia, serif;font-size:45px;line-height:1;font-style:italic;}
+.editable[data-role="title"]{font-family:"Archivo", Helvetica, sans-serif;font-size:18px;font-weight:600;font-style:normal;}
+.editable[data-role="meta"]{font-family:"Archivo", Helvetica, sans-serif;font-style:italic;}
+.editable[data-role="section"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:43px;}
+.editable[data-role="strapline"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:34px;color:#000000;}
+.editable[data-role="about"]{font-size:17px;letter-spacing:-0.02em;}
+</style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json"}</script></head>
+<body class="" style="">
 <div aria-hidden="true" class="custom-cursor" id="customCursor"><div class="cursor-arrow"><svg aria-hidden="true" fill="none" viewBox="0 0 24 24"><path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div></div>
 <header>
 <div class="brand-wrap">
 <img alt="logo" id="logoImg" style="display: none;">
-<a class="brand editable" data-field="brand" data-role="brand" href="#top">Altrune</a>
+<a class="brand editable" data-field="brand" data-role="brand" href="#top" style="">Altrune</a>
 </div>
 <nav>
 <a href="#top">Featured</a>
@@ -937,25 +943,25 @@ html[data-exported="true"] .cap {
 <div class="hero-dots" id="heroDots"></div>
 </div>
 <div class="hero-caption">
-<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">Vertical Garden</h1>
+<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">Twin Towers</h1>
 <div class="hero-meta">
-<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Halo Studio</span>
+<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Vela Works</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Singapore</span>
+<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">New York, USA</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2024</span>
+<span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2023</span>
 </div>
 </div>
 </section>
 <section class="strapline in-view" data-reveal="">
-<p class="editable" data-field="strapline" data-role="strapline">We combine technical precision with a sculptor's eye for light — <span>every render is a small architecture of its own.</span></p>
+<p class="editable" data-field="strapline" data-role="strapline">We believe the future should be experienced before it exists. We combine storytelling &amp; technology at their core&nbsp;<div><br></div><div>&nbsp;We’re architects who happen to be great at rendering.&nbsp;&nbsp;</div></p>
 </section>
 <section class="about in-view" data-reveal="" id="about">
 <div class="about-inner editable" data-field="about" data-role="about">Altrune is a 3D visualization studio crafting architectural imagery, product renders and spatial studies. We work with architects, developers and designers to turn drawings into light, texture and atmosphere.</div>
 </section>
 <div class="section-label in-view" data-reveal="">
 <span class="idx">01</span>
-<h2 class="editable" data-field="workTitle" data-role="section">Selected Work</h2>
+<h2 class="editable" data-field="workTitle" data-role="section">Selected Works</h2>
 <span class="line"></span>
 </div>
 <main id="work">
@@ -963,7 +969,7 @@ html[data-exported="true"] .cap {
 </main>
 <footer id="contact">
 <div class="footer-top">
-<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><a href="/cdn-cgi/l/email-protection#5839342c2a2d363d2b2c2d3c3137183f35393134763b3735">Let's talk — <span class="__cf_email__" data-cfemail="fe9f928a8c8b909b8d8a8b9a9791be99939f9792d09d9193">[email&nbsp;protected]</span></a></p>
+<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><a href="/cdn-cgi/l/email-protection#5839342c2a2d363d2b2c2d3c3137183f35393134763b3735">Let's talk </a>Altrunestudio@gmail.com</p>
 
 </div>
 <div class="footer-bottom">
@@ -982,7 +988,7 @@ html[data-exported="true"] .cap {
 
 <div class="lb" id="lb" onclick="closeLB()">
 <button class="lb-close" onclick="closeLB()">close ×</button>
-<img alt="" id="lb-img" src="">
+<img alt="" id="lb-img" style="display: block;">
 <video controls="" id="lb-video" playsinline="" style="display:none"></video></div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 
@@ -2417,4 +2423,4 @@ loadGithubFolderPortfolio();
 </script>
 <script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a312868fff7e2974',t:'MTc4Nzc0NDA0OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
 
-<hku-orrzbupfqgun></hku-orrzbupfqgun></body></html>
+<hal-kvvgxabakahj></hal-kvvgxabakahj></body></html>
