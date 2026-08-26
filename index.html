@@ -911,14 +911,115 @@ html[data-exported="true"] .cap {
 /* Role styles are emitted onto [data-role], so dynamically discovered GitHub
    titles and metadata receive the same font, weight, spacing and layout rules. */
 .github-media-fallback { text-wrap: balance; }
+
+
+/* ================= RICH TEXT + PHONE PREVIEW ================= */
+#inspector .insp-hint {
+  margin: -4px 0 10px;
+  color: #b9b9b2;
+  font-size: 10px;
+  line-height: 1.45;
+  letter-spacing: .02em;
+  text-transform: none;
+}
+body.editing .editable { min-height: 1em; }
+body.editing .editable span[data-inline-format="true"] { outline: 1px solid rgba(201,98,47,.28); outline-offset: 1px; }
+
+.studio-info {
+  margin: 0 40px;
+  border-top: 1px solid var(--line);
+  padding: 34px 0 76px;
+}
+.studio-info-inner { max-width: 1180px; margin: 0 auto; }
+.studio-info-eyebrow,
+.studio-info-label {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: 10px;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.studio-info-eyebrow { margin-bottom: 24px; }
+.studio-info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 42px;
+}
+.studio-info-label { margin-bottom: 10px; }
+.studio-info-copy {
+  color: #33332f;
+  font-family: var(--serif);
+  font-size: clamp(18px, 2.1vw, 28px);
+  font-style: italic;
+  font-weight: 400;
+  line-height: 1.35;
+}
+body.editing .studio-info-copy { padding: 3px; }
+
+
+
+/* ================= COMPACT REAL PHONE LAYOUT ================= */
+@media (max-width: 640px) {
+  header { padding: 16px 18px; }
+  header nav { display: none; }
+  .hero { padding: 14px 10px 0; }
+  .hero-top { padding: 4px 4px 12px; }
+  .hero-media { height: min(57vh, 510px); }
+  .hero-caption { gap: 8px; padding: 14px 4px 4px; }
+  .hero-name { font-size: clamp(30px, 9vw, 42px); }
+  .hero-meta { gap: 6px; font-size: 9px; white-space: normal; }
+  .strapline { padding: 54px 18px 20px; }
+  .about { padding: 20px 18px; }
+  .section-label { padding: 36px 18px 18px; gap: 10px; }
+  main { padding: 0 12px 48px; }
+  .cols { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px 10px; align-items: start; }
+  .item { min-width: 0; }
+  .img-wrap { aspect-ratio: 4 / 5; line-height: normal; overflow: hidden; }
+  .img-wrap img, .img-wrap video { width: 100%; height: 100%; object-fit: cover; }
+  .item-overlay {
+    position: static;
+    display: block;
+    min-height: 47px;
+    padding: 7px 1px 2px;
+    background: none;
+    opacity: 1;
+    pointer-events: none;
+    transition: none;
+  }
+  .ov-name, .ov-name.github-role {
+    display: block;
+    color: var(--ink) !important;
+    font-size: clamp(11px, 3.35vw, 14px) !important;
+    line-height: 1.16 !important;
+    overflow-wrap: anywhere;
+  }
+  .ov-meta, .ov-meta.github-role {
+    display: block;
+    margin-top: 3px;
+    color: var(--muted) !important;
+    font-size: clamp(7px, 2vw, 8.5px) !important;
+    line-height: 1.35 !important;
+    letter-spacing: .07em !important;
+    overflow-wrap: anywhere;
+    white-space: normal;
+  }
+  .studio-info { margin: 0 18px; padding: 28px 0 44px; }
+  .studio-info-grid { grid-template-columns: 1fr; gap: 28px; }
+  .studio-info-copy { font-size: clamp(18px, 5.2vw, 22px); }
+  footer { padding: 46px 18px 24px; }
+  .footer-top { gap: 28px; padding-bottom: 34px; }
+  .footer-actions { gap: 10px; }
+  .footer-actions .btn { padding: 9px 11px; font-size: 10px; }
+}
 </style>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&amp;family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" id="portfolioGoogleFonts" rel="stylesheet"><style id="roleStyles"></style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json"}</script></head>
-<body style="" class="">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&amp;family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" id="portfolioGoogleFonts" rel="stylesheet"><style id="roleStyles">.editable[data-role="title"], .github-role[data-role="title"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:20px;}
+</style><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json"}</script></head>
+<body class="">
 <div aria-hidden="true" class="custom-cursor" id="customCursor"><div class="cursor-arrow"><svg aria-hidden="true" fill="none" viewBox="0 0 24 24"><path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div></div>
 <header>
 <div class="brand-wrap">
-<img alt="logo" id="logoImg" style="display: none;">
-<a class="brand editable" data-field="brand" data-role="brand" href="#top">Altrune</a>
+<img alt="logo" id="logoImg" style="display: block;" src="logo/logo.png">
+<a class="brand editable" data-field="brand" data-role="brand" href="#top" style="display: none;">Altrune</a>
 </div>
 <nav>
 <a href="#top">Featured</a>
@@ -943,18 +1044,18 @@ html[data-exported="true"] .cap {
 <div class="hero-dots" id="heroDots"></div>
 </div>
 <div class="hero-caption">
-<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">The Spire</h1>
+<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">The Gate</h1>
 <div class="hero-meta">
-<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Fjord Studio</span>
+<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Nord Architects</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Chicago, USA</span>
+<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Kyoto, Japan</span>
 <span class="dot">·</span>
 <span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2024</span>
 </div>
 </div>
 </section>
 <section class="strapline in-view" data-reveal="">
-<p class="editable" data-field="strapline" data-role="strapline">We combine technical precision with a sculptor's eye for light — <span>every render is a small architecture of its own.</span></p>
+<p class="editable" data-field="strapline" data-role="strapline"><span data-inline-format="true" style="font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;"><span data-inline-format="true" style="color: rgb(0, 0, 0);">We believe the future should be experienced before it exists. We combine storytelling &amp; technology at their core</span> <span data-inline-format="true" style="color: rgb(210, 144, 30);"><span data-inline-format="true" style="color: rgb(255, 162, 0);">- We’re architects who happen to be great at rendering.</span>&nbsp;&nbsp;</span></span></p>
 </section>
 <section class="about in-view" data-reveal="" id="about">
 <div class="about-inner editable" data-field="about" data-role="about">Altrune is a 3D visualization studio crafting architectural imagery, product renders and spatial studies. We work with architects, developers and designers to turn drawings into light, texture and atmosphere.</div>
@@ -967,9 +1068,23 @@ html[data-exported="true"] .cap {
 <main id="work">
 <div class="cols" id="cols"></div>
 </main>
-<footer id="contact">
+<section class="studio-info" id="studioInfo">
+<div class="studio-info-inner">
+<p class="studio-info-eyebrow">Studio information</p>
+<div class="studio-info-grid">
+<div class="studio-info-block">
+<p class="studio-info-label">Address</p>
+<div class="studio-info-copy editable" data-field="address" data-role="address"><span data-inline-format="true" style="font-family: &quot;DM Sans&quot;, Helvetica, sans-serif; font-style: normal; font-size: 21px;">Gaur city mall, Greater Noida W Rd, Gaur City 1, Sector 4, Greater Noida, Ghaziabad, Uttar Pradesh 201318</span></div>
+</div>
+<div class="studio-info-block">
+<p class="studio-info-label">Other information</p>
+<div class="studio-info-copy editable" data-field="info" data-role="info"><span data-inline-format="true" style="font-size: 21px; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;"><span data-inline-format="true" style="font-style: normal;">Monday - Friday | 10 a.m - 6 p.m | Book an appointment</span></span></div>
+</div>
+</div>
+</div>
+</section><footer id="contact">
 <div class="footer-top">
-<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><a href="/cdn-cgi/l/email-protection#b1d0ddc5c3c4dfd4c2c5c4d5d8def1d6dcd0d8dd9fd2dedc">Let's talk — <span class="__cf_email__" data-cfemail="3b5a574f494e555e484f4e5f52547b5c565a525715585456">[email&nbsp;protected]</span></a></p>
+<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><span data-inline-format="true" style="font-style: normal; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;">Let's Talk -&nbsp;<br><div></div></span><div><span data-inline-format="true" style="font-family: &quot;DM Sans&quot;, Helvetica, sans-serif; font-style: normal;"><span data-inline-format="true" style="color: rgb(255, 123, 0);">Altrunestudio@gmail.com</span></span></div></p>
 
 </div>
 <div class="footer-bottom">
@@ -979,7 +1094,7 @@ html[data-exported="true"] .cap {
       &nbsp;·&nbsp;
       <a href="https://kulean.artstation.com/" target="_blank">Artstation</a>
       &nbsp;·&nbsp;
-      <a href="/cdn-cgi/l/email-protection#a5c4c9d1d7d0cbc0d6d1d0c1cccae5c2c8c4ccc98bc6cac8"><span class="__cf_email__" data-cfemail="8dece1f9fff8e3e8fef9f8e9e4e2cdeae0ece4e1a3eee2e0">[email&nbsp;protected]</span></a>
+      <a href="/cdn-cgi/l/email-protection#e7868b9395928982949392838e88a7808a868e8bc984888a"><span class="__cf_email__" data-cfemail="02636e7670776c67717677666b6d42656f636b6e2c616d6f">[email&nbsp;protected]</span></a>
 </span>
 </div>
 </footer>
@@ -988,9 +1103,11 @@ html[data-exported="true"] .cap {
 
 <div class="lb" id="lb" onclick="closeLB()">
 <button class="lb-close" onclick="closeLB()">close ×</button>
-<img alt="" id="lb-img" style="display: block;">
+<img alt="" id="lb-img" src="">
 <video controls="" id="lb-video" playsinline="" style="display:none"></video></div>
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+
+
 
 
 
@@ -1187,7 +1304,8 @@ const ROLE_LABELS = {
   'hero-name': 'Hero name', 'hero-meta': 'Hero details',
   strapline: 'Intro line', about: 'About text',
   section: 'Section heading', brand: 'Brand',
-  cta: 'Footer headline', footer: 'Footer text'
+  cta: 'Footer headline', footer: 'Footer text',
+  address: 'Address', info: 'Other information'
 };
 
 const fFont = document.getElementById('fFont');
@@ -1218,6 +1336,34 @@ if (!roleSheet) {
   document.head.appendChild(roleSheet);
 }
 let currentRole = null;
+let currentEditable = null;
+let savedTextRange = null;
+
+function isProjectText(el){ return !!el?.closest('.item'); }
+function closestEditable(node){
+  const element = node?.nodeType === Node.ELEMENT_NODE ? node : node?.parentElement;
+  return element?.closest?.('.editable') || null;
+}
+function rangeBelongsTo(el, range){
+  return !!el && !!range && el.contains(range.commonAncestorContainer);
+}
+function rememberTextRange(el){
+  const selection = window.getSelection();
+  if (!selection?.rangeCount) return;
+  const range = selection.getRangeAt(0);
+  if (rangeBelongsTo(el, range)) savedTextRange = range.cloneRange();
+}
+function selectedTextRange(){
+  if (!currentEditable || !savedTextRange || !rangeBelongsTo(currentEditable, savedTextRange)) return null;
+  return savedTextRange.cloneRange();
+}
+function inspectorStyleTarget(el){
+  const range = selectedTextRange();
+  if (!range) return el;
+  const node = range.startContainer;
+  const target = node.nodeType === Node.TEXT_NODE ? node.parentElement : node;
+  return target && el.contains(target) ? target : el;
+}
 
 function renderRoleStyles(){
   let css = '';
@@ -1232,7 +1378,7 @@ function renderRoleStyles(){
     if (s.fontStyle) d += `font-style:${s.fontStyle};`;
     if (s.textTransform) d += `text-transform:${s.textTransform};`;
     if (s.textAlign) d += `text-align:${s.textAlign};`;
-    if (d) css += `[data-role="${role}"]{${d}}\n`;
+    if (d) css += `.editable[data-role="${role}"], .github-role[data-role="${role}"]{${d}}\n`;
   }
   roleSheet.textContent = css;
   syncOverlayFonts();
@@ -1262,11 +1408,19 @@ function rgb2hex(rgb){
   return '#' + m.slice(0, 3).map(x => (+x).toString(16).padStart(2, '0')).join('');
 }
 function showInspector(el){
-  if (!inspector || !fFont) return;
+  if (!inspector || !fFont || !el) return;
+  currentEditable = el;
   currentRole = el.dataset.role || 'default';
-  const title = document.getElementById('inspTitle');
-  if (title) title.textContent = ROLE_LABELS[currentRole] || 'Text';
-  const cs = getComputedStyle(el);
+  rememberTextRange(el);
+  const heading = document.getElementById('inspTitle');
+  const hint = document.getElementById('inspHint');
+  const richText = !isProjectText(el);
+  if (heading) heading.textContent = richText ? `${ROLE_LABELS[currentRole] || 'Text'} — selected text` : (ROLE_LABELS[currentRole] || 'Text');
+  if (hint) hint.textContent = richText
+    ? 'Select any letters, words, or lines to format only that selection. With no selection, formatting applies to this whole text box.'
+    : 'Project captions keep their existing shared formatting controls.';
+  const target = inspectorStyleTarget(el);
+  const cs = getComputedStyle(target);
   const fam = cs.fontFamily.toLowerCase();
   const match = FONTS.find(f => fam.indexOf(f[0].split(' ')[0].toLowerCase()) >= 0);
   fFont.value = match ? match[0] : 'System sans';
@@ -1283,8 +1437,83 @@ function showInspector(el){
 function hideInspector(){
   if (inspector) inspector.classList.remove('on');
   currentRole = null;
+  currentEditable = null;
+  savedTextRange = null;
+}
+function styleValue(prop, value){
+  if (prop === 'fontSize') return `${value}px`;
+  if (prop === 'letterSpacing') return `${value}em`;
+  return String(value);
+}
+function formattingWrapperForRange(range){
+  const node = range.commonAncestorContainer.nodeType === Node.ELEMENT_NODE
+    ? range.commonAncestorContainer : range.commonAncestorContainer.parentElement;
+  const wrapper = node?.closest?.('span[data-inline-format="true"]');
+  if (!wrapper || !currentEditable?.contains(wrapper)) return null;
+  const wrapperRange = document.createRange();
+  wrapperRange.selectNodeContents(wrapper);
+  const startsTogether = range.compareBoundaryPoints(Range.START_TO_START, wrapperRange) === 0;
+  const endsTogether = range.compareBoundaryPoints(Range.END_TO_END, wrapperRange) === 0;
+  return startsTogether && endsTogether ? wrapper : null;
+}
+function selectFormattingWrapper(wrapper){
+  const refreshed = document.createRange();
+  refreshed.selectNodeContents(wrapper);
+  savedTextRange = refreshed;
+  const selection = window.getSelection();
+  selection.removeAllRanges();
+  selection.addRange(refreshed);
+}
+function applyLocalTextStyle(prop, value){
+  if (!currentEditable) return;
+  if (prop === 'textAlign') {
+    currentEditable.style.textAlign = styleValue(prop, value);
+  } else {
+    const range = selectedTextRange();
+    if (range && !range.collapsed) {
+      const reusable = formattingWrapperForRange(range);
+      if (reusable) {
+        reusable.style[prop] = styleValue(prop, value);
+        selectFormattingWrapper(reusable);
+      } else {
+        const wrapper = document.createElement('span');
+        wrapper.dataset.inlineFormat = 'true';
+        wrapper.style[prop] = styleValue(prop, value);
+        try {
+          range.surroundContents(wrapper);
+        } catch (error) {
+          const fragment = range.extractContents();
+          wrapper.appendChild(fragment);
+          range.insertNode(wrapper);
+        }
+        selectFormattingWrapper(wrapper);
+      }
+    } else {
+      currentEditable.style[prop] = styleValue(prop, value);
+    }
+  }
+  currentEditable.dispatchEvent(new Event('input', { bubbles: true }));
+}
+function resetLocalTextStyle(){
+  if (!currentEditable) return;
+  const range = selectedTextRange();
+  if (range && !range.collapsed) {
+    const base = range.commonAncestorContainer.nodeType === Node.ELEMENT_NODE
+      ? range.commonAncestorContainer : range.commonAncestorContainer.parentElement;
+    const wrapper = base?.closest?.('span[data-inline-format="true"]');
+    if (wrapper && currentEditable.contains(wrapper)) {
+      wrapper.replaceWith(...wrapper.childNodes);
+    }
+  } else {
+    currentEditable.removeAttribute('style');
+  }
+  currentEditable.dispatchEvent(new Event('input', { bubbles: true }));
 }
 function setRole(prop, val){
+  if (currentEditable && !isProjectText(currentEditable)) {
+    applyLocalTextStyle(prop, val);
+    return;
+  }
   if (!currentRole) return;
   (roleStyles[currentRole] = roleStyles[currentRole] || {})[prop] = val;
   renderRoleStyles();
@@ -1301,8 +1530,13 @@ if (fSpacing) fSpacing.addEventListener('input', () => setRole('letterSpacing', 
 if (fLine) fLine.addEventListener('input', () => setRole('lineHeight', fLine.value === '' ? '' : parseFloat(fLine.value)));
 if (fItalic) fItalic.addEventListener('change', () => setRole('fontStyle', fItalic.checked ? 'italic' : 'normal'));
 if (fUpper) fUpper.addEventListener('change', () => setRole('textTransform', fUpper.checked ? 'uppercase' : 'none'));
-document.querySelectorAll('.align-row button').forEach(b => b.addEventListener('click', () => setRole('textAlign', b.dataset.align)));
+document.querySelectorAll('.align-row button').forEach(button => button.addEventListener('click', () => setRole('textAlign', button.dataset.align)));
 if (fReset) fReset.addEventListener('click', () => {
+  if (currentEditable && !isProjectText(currentEditable)) {
+    resetLocalTextStyle();
+    showInspector(currentEditable);
+    return;
+  }
   if (!currentRole) return;
   delete roleStyles[currentRole];
   renderRoleStyles();
@@ -1310,10 +1544,22 @@ if (fReset) fReset.addEventListener('click', () => {
   if (sample) showInspector(sample);
 });
 
-document.addEventListener('click', e => {
-  const editable = e.target.closest('.editable');
+document.addEventListener('selectionchange', () => {
+  if (!document.body.classList.contains('editing')) return;
+  const selection = window.getSelection();
+  if (!selection?.rangeCount) return;
+  const editable = closestEditable(selection.anchorNode);
+  const range = selection.getRangeAt(0);
+  if (editable && rangeBelongsTo(editable, range)) {
+    currentEditable = editable;
+    currentRole = editable.dataset.role || 'default';
+    savedTextRange = range.cloneRange();
+  }
+});
+document.addEventListener('click', event => {
+  const editable = event.target.closest('.editable');
   if (editable && document.body.classList.contains('editing')) showInspector(editable);
-  else if (!e.target.closest('#inspector')) hideInspector();
+  else if (!event.target.closest('#inspector')) hideInspector();
 });
 
 /* ================= LOGO ================= */
@@ -1720,7 +1966,7 @@ function preparePublicClone(){
   clone.setAttribute('data-exported', 'true');
   clone.setAttribute('data-hero-timing', String(exportedTiming));
   if (cloneBody) {
-    cloneBody.classList.remove('editing', 'exporting');
+    cloneBody.classList.remove('editing', 'exporting', 'phone-preview');
     cloneBody.style.overflow = '';
   }
   // Reset only transient runtime state. Public pages then replay their normal
@@ -1789,7 +2035,7 @@ function prepareEditableClone(){
   clone.removeAttribute('data-github-portfolio');
   clone.setAttribute('data-hero-timing', String(savedTiming));
   if (cloneBody) {
-    cloneBody.classList.remove('editing', 'exporting');
+    cloneBody.classList.remove('editing', 'exporting', 'phone-preview');
     cloneBody.style.overflow = '';
   }
   clone.querySelectorAll('.item').forEach(item => {
@@ -1815,11 +2061,37 @@ function prepareEditableClone(){
   });
   return clone;
 }
+let editableFileHandle = null;
+function setSaveButtonState(message = ''){
+  [document.getElementById('saveHtmlBtn'), document.getElementById('saveHtmlBtn2')].forEach(button => {
+    if (!button) return;
+    button.title = message || 'Save the current editable HTML file';
+  });
+}
 async function saveEditableHTML(){
   setBusy(true);
   try {
     const clone = prepareEditableClone();
-    download(new Blob(['<!DOCTYPE html>\n', clone.outerHTML], { type: 'text/html' }), 'altrune_portfolio_editable.html');
+    const html = '<!DOCTYPE html>\n' + clone.outerHTML;
+    if ('showSaveFilePicker' in window) {
+      if (!editableFileHandle) {
+        editableFileHandle = await window.showSaveFilePicker({
+          suggestedName: 'altrune_portfolio_editable.html',
+          types: [{ description: 'HTML file', accept: { 'text/html': ['.html'] } }]
+        });
+      }
+      const writable = await editableFileHandle.createWritable();
+      await writable.write(html);
+      await writable.close();
+      setSaveButtonState('Saved to the selected HTML file. Future saves overwrite this same file.');
+    } else {
+      // Browser security prevents direct overwrites without File System Access.
+      // Preserve the work safely rather than silently losing it.
+      download(new Blob([html], { type: 'text/html' }), 'altrune_portfolio_editable.html');
+      setSaveButtonState('This browser cannot overwrite a local file directly; an editable HTML download was created.');
+    }
+  } catch (error) {
+    if (error?.name !== 'AbortError') console.warn('Could not save editable HTML', error);
   } finally {
     setBusy(false);
   }
@@ -2439,11 +2711,11 @@ function makeGithubGalleryItem(entry, index){
   const overlay = document.createElement('div');
   overlay.className = 'item-overlay';
   const name = document.createElement('span');
-  name.className = 'ov-name';
+  name.className = 'ov-name github-role';
   name.dataset.role = 'title';
   name.textContent = entry.title;
   const meta = document.createElement('span');
-  meta.className = 'ov-meta';
+  meta.className = 'ov-meta github-role';
   meta.dataset.role = 'meta';
   meta.textContent = [entry.client, entry.location, entry.year].filter(Boolean).join(' — ');
   overlay.append(name, meta);
@@ -2525,7 +2797,10 @@ async function loadGithubFolderPortfolio(){
 loadGithubFolderPortfolio();
 
 
-</script>
-<script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a312cb73ebb42141',t:'MTc4Nzc0Njg3MA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe>
 
-<uxo-wfutrslfqito></uxo-wfutrslfqito></body></html>
+
+</script>
+<script type="module" src="https://static.cloudflareinsights.com/beacon.min.js/v4513226cdae34746b4dedf0b4dfa099e1781791509496" integrity="sha512-ZE9pZaUXND66v380QUtch/5sE9tPFh2zg45pR2PB0CVkCtOREv2AJKkSidISWkysEuQ0EH8faUU5du78bx87UQ==" data-cf-beacon="{&quot;version&quot;:&quot;2024.11.0&quot;,&quot;token&quot;:&quot;1954b47c125f43f8b4338b3c4f804e4f&quot;}" crossorigin="anonymous"></script>
+
+
+<zbd-wktjjrphqfdr></zbd-wktjjrphqfdr></body></html>
