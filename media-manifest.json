@@ -1,0 +1,14 @@
+{
+  "version": 1,
+  "files": {
+    "images/The sarthak - london - hero.png": {
+      "kind": "image"
+    },
+    "images/The spire - london.jpg": {
+      "kind": "image"
+    },
+    "images/oi.png": {
+      "kind": "image"
+    }
+  }
+}
