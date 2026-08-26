@@ -1,9 +1,9 @@
 name: Build portfolio media previews
 
+# Runs on every human push so media-manifest.json is always refreshed, even
+# when a local commit changes filenames or related project content.
 on:
   push:
-    paths:
-      - 'images/**'
   workflow_dispatch:
 
 permissions:
@@ -11,6 +11,7 @@ permissions:
 
 jobs:
   previews:
+    if: github.actor != 'github-actions[bot]'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -21,7 +22,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y imagemagick
-      - name: Build browser-safe media previews
+      - name: Build browser-safe media previews and manifest
         run: python tools/generate_portfolio_media.py
       - name: Commit generated previews only
         run: |
