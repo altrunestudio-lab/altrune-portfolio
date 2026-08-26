@@ -2,7 +2,7 @@
 
 Upload portfolio images to this folder. The website discovers them automatically after GitHub Pages rebuilds.
 
-## Filename format
+## Filename format: Project name - Client - Location - Year - hero.ext
 
 - Gallery card: `The spire - london.jpg`
 - Hero slide: `The spire - london - hero.jpg`
