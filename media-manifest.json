@@ -2,60 +2,223 @@
   "version": 2,
   "files": {
     "images/01 (1).jpg": {
-      "kind": "image",
-      "preview": ".portfolio-media/04e1767694450915de09.webp"
+      "kind": "image"
     },
-    "images/01_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh - hero.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/694fe07d040d6c2f97c7.webp"
+    "images/01_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
     },
-    "images/02_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/9a7f4784c53a01942010.webp"
+    "images/02_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
     },
-    "images/03_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/fedde435c617d65b60ec.webp"
+    "images/03_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
     },
-    "images/04_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/0cf4ad6cedf24cae17d3.webp"
+    "images/04_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
     },
-    "images/05_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/4ab11477bed1c073d7b7.webp"
+    "images/05_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
     },
-    "images/06_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/26f572208afd8c8e135b.webp"
+    "images/06_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
     },
-    "images/07_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/27fb907448de7898da05.webp"
+    "images/07_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
     },
-    "images/08_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/af2230b23bfe6be98842.webp"
+    "images/08_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
     },
-    "images/09_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/e7985c7f1bd5a7b88f1c.webp"
+    "images/09_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
     },
     "images/1.jpg": {
-      "kind": "image",
-      "preview": ".portfolio-media/2b28cdc6205e26fef6a2.webp"
+      "kind": "image"
     },
-    "images/10_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/b6be04bed50fa87ca021.webp"
+    "images/10_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
     },
-    "images/11_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/55f97db37b5cb149490e.webp"
+    "images/11_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
     },
-    "images/12_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image",
-      "preview": ".portfolio-media/b6c93e53f7d7fab7b630.webp"
+    "images/12_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
+    },
+    "images/13_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/14_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/15_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/16_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/17_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/18_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/19_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/20_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/21_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/22_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/23_ Karyan NINE - STAD - NH-9, Gaziabad, UP - 2026.webp": {
+      "kind": "image"
+    },
+    "images/24_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/25_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/26_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/27_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/28_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/29_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/30_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/31_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/32_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/33_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/34_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/35_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/36_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/37_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/38_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/39_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/40_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/41_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/42_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/43_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/44_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/45_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/46_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/47_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/48_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/49_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/50_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/51_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/52_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/53_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/54_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/55_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/56_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/57_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/58_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/59_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/60_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/61_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/62_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/63_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/64_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/65_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/66_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/67_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/68_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/69_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/70_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/71_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     }
   }
 }
