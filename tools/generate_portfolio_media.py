@@ -26,8 +26,8 @@ if IMAGES.exists():
         if suffix not in IMAGE_FORMATS:
             continue
         record = {"kind": "image"}
-        # Always build a browser-sized WebP preview. This keeps huge source PNGs
-        # and JPGs out of the live gallery while never changing /images itself.
+        # All still images get a bounded WebP preview. Originals in /images are
+        # read only; previews live outside that folder.
         if converter:
             digest = hashlib.sha256(relative.encode("utf-8")).hexdigest()[:20]
             preview = PREVIEWS / f"{digest}.webp"

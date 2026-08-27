@@ -32,7 +32,9 @@
       "kind": "image"
     },
     "images/1.jpg": {
-      "kind": "image"
+"images/1.jpg": {
+      "kind": "image",
+      "preview": ".portfolio-media/2b28cdc6205e26fef6a2.webp"
     },
     "images/10_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
       "kind": "image"
@@ -42,6 +44,7 @@
     },
     "images/12_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
       "kind": "image"
+    }
     }
   }
 }
