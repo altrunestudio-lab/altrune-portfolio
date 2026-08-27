@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-hero-timing="3" lang="en" data-page-margin="102" style="--page-margin: 102px; --gallery-image-pad-x: 21px; --gallery-image-pad-y: 29px;" data-gallery-image-pad-x="21" data-gallery-image-pad-y="29" data-exported="true" data-github-portfolio="folder-sync"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<html data-hero-timing="2" lang="en" data-page-margin="100" style="--page-margin: 100px; --gallery-image-pad-x: 22px; --gallery-image-pad-y: 28px;" data-gallery-image-pad-x="22" data-gallery-image-pad-y="28" data-exported="true" data-github-portfolio="folder-sync"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Altrune — 3D Visualization</title>
 <link href="https://fonts.googleapis.com/" rel="preconnect">
@@ -1229,10 +1229,79 @@ body.is-loading { overflow: hidden !important; }
   .tour-tabs { justify-content: flex-start; margin-left: 0; }
   .tour-tab { padding: 8px 10px; font-size: 9px; }
 }
+
+
+/* Public/export entrance: every major object fades in after the loading hold. */
+:root { --content-fade-delay: 3s; --content-fade-duration: .95s; }
+body.is-loading header,
+body.is-loading .hero,
+body.is-loading .strapline,
+body.is-loading .about,
+body.is-loading .section-label,
+body.is-loading main,
+body.is-loading .tour-section,
+body.is-loading .youtube-section,
+body.is-loading .studio-info,
+body.is-loading footer {
+  opacity: 0;
+  transform: translateY(18px);
+}
+body.content-ready header,
+body.content-ready .hero,
+body.content-ready .strapline,
+body.content-ready .about,
+body.content-ready .section-label,
+body.content-ready main,
+body.content-ready .tour-section,
+body.content-ready .youtube-section,
+body.content-ready .studio-info,
+body.content-ready footer {
+  animation: contentFadeIn var(--content-fade-duration) cubic-bezier(.2,.7,.2,1) both;
+}
+body.content-ready .hero { animation-delay: .05s; }
+body.content-ready .strapline { animation-delay: .16s; }
+body.content-ready .about { animation-delay: .24s; }
+body.content-ready .section-label { animation-delay: .32s; }
+body.content-ready main { animation-delay: .40s; }
+body.content-ready .tour-section { animation-delay: .48s; }
+body.content-ready .youtube-section { animation-delay: .56s; }
+body.content-ready .studio-info { animation-delay: .64s; }
+body.content-ready footer { animation-delay: .72s; }
+@keyframes contentFadeIn {
+  from { opacity: 0; transform: translateY(18px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  body.is-loading header,
+  body.is-loading .hero,
+  body.is-loading .strapline,
+  body.is-loading .about,
+  body.is-loading .section-label,
+  body.is-loading main,
+  body.is-loading .tour-section,
+  body.is-loading .youtube-section,
+  body.is-loading .studio-info,
+  body.is-loading footer { transform: none; }
+  body.content-ready header,
+  body.content-ready .hero,
+  body.content-ready .strapline,
+  body.content-ready .about,
+  body.content-ready .section-label,
+  body.content-ready main,
+  body.content-ready .tour-section,
+  body.content-ready .youtube-section,
+  body.content-ready .studio-info,
+  body.content-ready footer { animation-duration: .2s; }
+}
 </style>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"><style id="roleStyles">.editable[data-role="title"], .github-role[data-role="title"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:20px;}
 </style><link href="https://fonts.googleapis.com" id="googleFontsPreconnect" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" id="googleFontsStaticPreconnect" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&amp;family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;family=Outfit:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;display=swap" id="portfolioGoogleFonts" rel="stylesheet"><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json","textManifestPath":"text/text-manifest.json","toursPath":"tours"}</script></head>
-<body class="">
+<body class="is-loading"><div aria-live="polite" aria-label="Loading portfolio images" class="site-loader" id="siteLoader" role="status">
+  <div class="site-loader-mark"><img alt="" id="siteLoaderLogo"></div>
+  <div class="site-loader-word" id="siteLoaderWord">Altrune</div>
+  <div class="site-loader-line"><span></span></div>
+  <div class="site-loader-note">Loading portfolio</div>
+</div>
 <div aria-hidden="true" class="custom-cursor" id="customCursor"><div class="cursor-arrow"><svg aria-hidden="true" fill="none" viewBox="0 0 24 24"><path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.8"></path></svg></div></div>
 
 <header>
@@ -1263,11 +1332,11 @@ body.is-loading { overflow: hidden !important; }
 <div class="hero-dots" id="heroDots"></div>
 </div>
 <div class="hero-caption">
-<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">Ribbon Facade</h1>
+<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">The Spire</h1>
 <div class="hero-meta">
-<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Meridian Design</span>
+<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Fjord Studio</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Milan, Italy</span>
+<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Chicago, USA</span>
 <span class="dot">·</span>
 <span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2024</span>
 </div>
@@ -2289,8 +2358,10 @@ function preparePublicClone(){
   clone.setAttribute('data-exported', 'true');
   clone.setAttribute('data-hero-timing', String(exportedTiming));
   if (cloneBody) {
-    cloneBody.classList.remove('editing', 'exporting', 'phone-preview');
+    cloneBody.classList.remove('editing', 'exporting', 'phone-preview', 'content-ready');
+    cloneBody.classList.add('is-loading');
     cloneBody.style.overflow = '';
+    ensureLoaderInDocument(clone);
   }
   // Reset only transient runtime state. Public pages then replay their normal
   // reveal-on-scroll, hero slideshow, custom-cursor and hover effects.
@@ -2358,8 +2429,10 @@ function prepareEditableClone(){
   clone.removeAttribute('data-github-portfolio');
   clone.setAttribute('data-hero-timing', String(savedTiming));
   if (cloneBody) {
-    cloneBody.classList.remove('editing', 'exporting', 'phone-preview');
+    cloneBody.classList.remove('editing', 'exporting', 'phone-preview', 'content-ready');
+    cloneBody.classList.add('is-loading');
     cloneBody.style.overflow = '';
+    ensureLoaderInDocument(clone);
   }
   clone.querySelectorAll('.item').forEach(item => {
     item.classList.remove('in-view');
@@ -2440,6 +2513,28 @@ if (exportHtmlBtn2) exportHtmlBtn2.addEventListener('click', exportHTML);
 
 
 /* ================= LOADING SCREEN ================= */
+
+const SITE_LOADER_HTML = `<div aria-live="polite" aria-label="Loading portfolio images" class="site-loader" id="siteLoader" role="status">
+  <div class="site-loader-mark"><img alt="" id="siteLoaderLogo"/></div>
+  <div class="site-loader-word" id="siteLoaderWord">Altrune</div>
+  <div class="site-loader-line"><span></span></div>
+  <div class="site-loader-note">Loading portfolio</div>
+</div>`;
+function ensureLoaderInDocument(root = document){
+  const doc = root.ownerDocument || root;
+  const body = root.querySelector ? root.querySelector('body') : document.body;
+  if (!body) return null;
+  let loader = root.querySelector ? root.querySelector('#siteLoader') : document.getElementById('siteLoader');
+  if (loader) {
+    loader.classList.remove('is-hidden');
+    return loader;
+  }
+  const template = doc.createElement('template');
+  template.innerHTML = SITE_LOADER_HTML.trim();
+  loader = template.content.firstElementChild;
+  body.insertBefore(loader, body.firstChild);
+  return loader;
+}
 function setupLoadingLogo(){
   const loaderLogo = document.getElementById('siteLoaderLogo');
   const loaderWord = document.getElementById('siteLoaderWord');
@@ -2471,10 +2566,13 @@ function waitForImageReady(img){
   });
 }
 async function finishLoadingScreen(){
+  ensureLoaderInDocument(document);
+  document.body.classList.add('is-loading');
+  document.body.classList.remove('content-ready');
   setupLoadingLogo();
   const started = Date.now();
   const maxHold = 4000;
-  const minHold = 900;
+  const minHold = 3000;
   const priorityImages = Array.from(document.querySelectorAll('#logoImg, .hero-slide img, .hero-slide video, .item:nth-child(-n+6) img'))
     .filter(img => img && img.id !== 'lb-img' && img.getAttribute('src'));
   const priorityReady = Promise.all(priorityImages.map(waitForImageReady));
@@ -2488,9 +2586,10 @@ async function finishLoadingScreen(){
   }
   const loader = document.getElementById('siteLoader');
   document.body.classList.remove('is-loading');
+  document.body.classList.add('content-ready');
   initRevealOnScroll();
   requestAnimationFrame(() => loader?.classList.add('is-hidden'));
-  setTimeout(() => loader?.remove(), 650);
+  setTimeout(() => loader?.remove(), 900);
   // Non-priority gallery images keep decoding in the background naturally.
 }
 
@@ -3639,4 +3738,4 @@ githubPortfolioBoot.catch(error => console.warn('Portfolio background loading fa
 
 
 </script>
-<zbd-wktjjrphqfdr></zbd-wktjjrphqfdr><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31963291dcaae9a',t:'MTc4NzgxNTk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31a74947e62582e',t:'MTc4NzgyNzE5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><jpy-vxzsdazcyoig></jpy-vxzsdazcyoig></body></html>
+<zbd-wktjjrphqfdr></zbd-wktjjrphqfdr><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31963291dcaae9a',t:'MTc4NzgxNTk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31a9b6e096fbd90',t:'MTc4NzgyODc4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><qbj-buocvykcqolv></qbj-buocvykcqolv></body></html>
