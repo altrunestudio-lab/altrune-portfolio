@@ -1,0 +1,55 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "field": "brand",
+      "selector": ".editable[data-field=\"brand\"]",
+      "path": "text/site/brand.docx"
+    },
+    {
+      "field": "strapline",
+      "selector": ".editable[data-field=\"strapline\"]",
+      "path": "text/intro/strapline.docx"
+    },
+    {
+      "field": "about",
+      "selector": ".editable[data-field=\"about\"]",
+      "path": "text/intro/about.docx"
+    },
+    {
+      "field": "workTitle",
+      "selector": ".editable[data-field=\"workTitle\"]",
+      "path": "text/sections/selected-work-heading.docx"
+    },
+    {
+      "field": "tourTitle",
+      "selector": ".editable[data-field=\"tourTitle\"]",
+      "path": "text/sections/360-tours-heading.docx"
+    },
+    {
+      "field": "youtubeTitle",
+      "selector": ".editable[data-field=\"youtubeTitle\"]",
+      "path": "text/sections/youtube-heading.docx"
+    },
+    {
+      "field": "address",
+      "selector": ".editable[data-field=\"address\"]",
+      "path": "text/studio/address.docx"
+    },
+    {
+      "field": "info",
+      "selector": ".editable[data-field=\"info\"]",
+      "path": "text/studio/other-information.docx"
+    },
+    {
+      "field": "cta",
+      "selector": ".editable[data-field=\"cta\"]",
+      "path": "text/footer/call-to-action.docx"
+    },
+    {
+      "field": "footCopy",
+      "selector": ".editable[data-field=\"footCopy\"]",
+      "path": "text/footer/copyright.docx"
+    }
+  ]
+}
