@@ -1293,6 +1293,77 @@ body.content-ready footer { animation-delay: .72s; }
   body.content-ready .studio-info,
   body.content-ready footer { animation-duration: .2s; }
 }
+
+
+/* ================= BRICK STAGGER + SLOWER ENTRANCE UPDATE ================= */
+:root {
+  --page-margin: 100px;
+  --gallery-image-pad-x: 22px;
+  --gallery-image-pad-y: 28px;
+  --content-fade-duration: 2.4s;
+  --gallery-stagger-step: 34px;
+}
+.cols { align-items: start; }
+.item {
+  transition: opacity 1.65s cubic-bezier(.2,.7,.2,1), transform 1.65s cubic-bezier(.2,.7,.2,1);
+  transition-delay: var(--item-delay, 0ms);
+}
+.item:nth-child(3n+2) { margin-top: var(--gallery-stagger-step); }
+.item:nth-child(3n) { margin-top: calc(var(--gallery-stagger-step) * 2); }
+.item.in-view:nth-child(3n+2) { transform: translateY(0); }
+.item.in-view:nth-child(3n) { transform: translateY(0); }
+body.content-ready header,
+body.content-ready .hero,
+body.content-ready .strapline,
+body.content-ready .about,
+body.content-ready .section-label,
+body.content-ready main,
+body.content-ready .tour-section,
+body.content-ready .youtube-section,
+body.content-ready .studio-info,
+body.content-ready footer {
+  animation-duration: 2.4s !important;
+  animation-timing-function: cubic-bezier(.16,.7,.18,1) !important;
+}
+@media (max-width: 1000px) {
+  .item:nth-child(3n+2), .item:nth-child(3n) { margin-top: 0; }
+  .item:nth-child(2n) { margin-top: var(--gallery-stagger-step); }
+}
+@media (max-width: 640px) {
+  .item:nth-child(2n) { margin-top: 18px; }
+}
+
+
+/* ================= KIASM-STYLE MASONRY STAGGER UPDATE ================= */
+/* Straight vertical columns, staggered/non-aligned horizontal breaks like kiasm.studio/work. */
+.cols {
+  display: block !important;
+  column-count: 3 !important;
+  column-gap: 28px !important;
+  grid-template-columns: none !important;
+  grid-auto-flow: initial !important;
+  align-items: initial !important;
+}
+.item {
+  display: inline-block !important;
+  width: 100% !important;
+  break-inside: avoid !important;
+  page-break-inside: avoid !important;
+  margin: 0 0 28px !important;
+  vertical-align: top;
+}
+.item:nth-child(3n+2),
+.item:nth-child(3n),
+.item:nth-child(2n) {
+  margin-top: 0 !important;
+}
+@media (max-width: 1000px) {
+  .cols { column-count: 2 !important; column-gap: 22px !important; }
+}
+@media (max-width: 640px) {
+  .cols { column-count: 2 !important; column-gap: 10px !important; }
+  .item { margin-bottom: 16px !important; }
+}
 </style>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"><style id="roleStyles">.editable[data-role="title"], .github-role[data-role="title"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:20px;}
 </style><link href="https://fonts.googleapis.com" id="googleFontsPreconnect" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" id="googleFontsStaticPreconnect" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&amp;family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;family=Outfit:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;display=swap" id="portfolioGoogleFonts" rel="stylesheet"><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json","textManifestPath":"text/text-manifest.json","toursPath":"tours"}</script></head>
@@ -1332,11 +1403,11 @@ body.content-ready footer { animation-delay: .72s; }
 <div class="hero-dots" id="heroDots"></div>
 </div>
 <div class="hero-caption">
-<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">The Spire</h1>
+<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">The Gate</h1>
 <div class="hero-meta">
-<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Fjord Studio</span>
+<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Nord Architects</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Chicago, USA</span>
+<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Kyoto, Japan</span>
 <span class="dot">·</span>
 <span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2024</span>
 </div>
@@ -1646,6 +1717,7 @@ const fColor = document.getElementById('fColor');
 const fSpacing = document.getElementById('fSpacing');
 const fLine = document.getElementById('fLine');
 const fItalic = document.getElementById('fItalic');
+const fUnderline = document.getElementById('fUnderline');
 const fUpper = document.getElementById('fUpper');
 const fReset = document.getElementById('fReset');
 const inspector = document.getElementById('inspector');
@@ -1708,6 +1780,7 @@ function renderRoleStyles(){
     if (s.lineHeight) d += `line-height:${s.lineHeight};`;
     if (s.fontStyle) d += `font-style:${s.fontStyle};`;
     if (s.textTransform) d += `text-transform:${s.textTransform};`;
+    if (s.textDecoration) d += `text-decoration:${s.textDecoration};`;
     if (s.textAlign) d += `text-align:${s.textAlign};`;
     if (d) css += `.editable[data-role="${role}"], .github-role[data-role="${role}"]{${d}}\n`;
   }
@@ -1716,7 +1789,7 @@ function renderRoleStyles(){
 }
 
 function syncOverlayFonts(){
-  const props = ['fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'letterSpacing', 'textTransform', 'lineHeight'];
+  const props = ['fontFamily', 'fontSize', 'fontWeight', 'fontStyle', 'letterSpacing', 'textTransform', 'textDecoration', 'lineHeight'];
   document.querySelectorAll('.item').forEach(fig => {
     const title = fig.querySelector('.cap [data-field="title"]');
     const client = fig.querySelector('.cap [data-field="client"]');
@@ -1762,6 +1835,7 @@ function showInspector(el){
   fSpacing.value = cs.letterSpacing === 'normal' ? '' : (parseFloat(cs.letterSpacing) / fontPixels).toFixed(3);
   fLine.value = cs.lineHeight === 'normal' ? '' : (parseFloat(cs.lineHeight) / fontPixels).toFixed(3);
   fItalic.checked = cs.fontStyle === 'italic';
+  if (fUnderline) fUnderline.checked = String(cs.textDecorationLine || cs.textDecoration || '').includes('underline');
   fUpper.checked = cs.textTransform === 'uppercase';
   inspector.classList.add('on');
 }
@@ -1774,6 +1848,7 @@ function hideInspector(){
 function styleValue(prop, value){
   if (prop === 'fontSize') return `${value}px`;
   if (prop === 'letterSpacing') return `${value}em`;
+  if (prop === 'textDecoration') return String(value);
   return String(value);
 }
 function formattingWrapperForRange(range){
@@ -1860,6 +1935,7 @@ if (fColor) fColor.addEventListener('input', () => setRole('color', fColor.value
 if (fSpacing) fSpacing.addEventListener('input', () => setRole('letterSpacing', fSpacing.value === '' ? '' : parseFloat(fSpacing.value)));
 if (fLine) fLine.addEventListener('input', () => setRole('lineHeight', fLine.value === '' ? '' : parseFloat(fLine.value)));
 if (fItalic) fItalic.addEventListener('change', () => setRole('fontStyle', fItalic.checked ? 'italic' : 'normal'));
+if (fUnderline) fUnderline.addEventListener('change', () => setRole('textDecoration', fUnderline.checked ? 'underline' : 'none'));
 if (fUpper) fUpper.addEventListener('change', () => setRole('textTransform', fUpper.checked ? 'uppercase' : 'none'));
 document.querySelectorAll('.align-row button').forEach(button => button.addEventListener('click', () => setRole('textAlign', button.dataset.align)));
 if (fReset) fReset.addEventListener('click', () => {
@@ -2064,6 +2140,8 @@ function wireItem(fig){
 }
 
 document.querySelectorAll('.item').forEach(wireItem);
+function applyGalleryStaggerDelays(){ document.querySelectorAll('.item').forEach((item, index) => item.style.setProperty('--item-delay', `${Math.min(index, 12) * 80}ms`)); }
+applyGalleryStaggerDelays();
 
 /* ================= ADD PROJECT ================= */
 const projModal = document.getElementById('projModal');
@@ -2102,6 +2180,7 @@ if (projSave) projSave.addEventListener('click', () => {
   // left → right from the top, rather than flowing down a masonry column.
   const shelf = document.getElementById('cols');
   shelf.insertBefore(fig, shelf.firstElementChild);
+  applyGalleryStaggerDelays();
   projImgData = null;
   if (projImgPrev) projImgPrev.innerHTML = '<span class="ph">+ Choose image</span>';
   ['projName', 'projClient', 'projLoc', 'projYear'].forEach(id => {
@@ -2282,7 +2361,7 @@ const pageMarginRange = document.getElementById('pageMarginRange');
 const pageMarginValue = document.getElementById('pageMarginValue');
 function clampPageMargin(value){
   const number = Number(value);
-  return Number.isFinite(number) ? Math.max(12, Math.min(160, Math.round(number / 2) * 2)) : 44;
+  return Number.isFinite(number) ? Math.max(12, Math.min(160, Math.round(number / 2) * 2)) : 100;
 }
 function currentPageMargin(){
   const inline = parseFloat(document.documentElement.style.getPropertyValue('--page-margin'));
@@ -2318,7 +2397,7 @@ function currentGalleryImagePadding(axis){
   const stored = parseFloat(document.documentElement.dataset[dataKey]);
   const inline = parseFloat(document.documentElement.style.getPropertyValue(variable));
   const computed = parseFloat(getComputedStyle(document.documentElement).getPropertyValue(variable));
-  return clampGalleryImagePadding(Number.isFinite(stored) ? stored : (Number.isFinite(inline) ? inline : computed));
+  return clampGalleryImagePadding(Number.isFinite(stored) ? stored : (Number.isFinite(inline) ? inline : (Number.isFinite(computed) ? computed : (axis === 'x' ? 22 : 28))));
 }
 function applyGalleryImagePadding(axis, value){
   const amount = clampGalleryImagePadding(value);
@@ -3053,6 +3132,7 @@ function rgbToHexPlain(value){
   const hex = rgb2hex(value);
   return hex ? hex.slice(1).toUpperCase() : '';
 }
+function boolXmlTag(name, on){ return on ? `<w:${name}/>` : `<w:${name} w:val="0"/>`; }
 function nodeComputedRunXml(node){
   const element = node.nodeType === Node.ELEMENT_NODE ? node : node.parentElement;
   const cs = element ? getComputedStyle(element) : null;
@@ -3060,6 +3140,8 @@ function nodeComputedRunXml(node){
   const parts = [];
   if (Number(cs.fontWeight) >= 600 || cs.fontWeight === 'bold') parts.push('<w:b/>');
   if (cs.fontStyle === 'italic') parts.push('<w:i/>');
+  const decoration = String(cs.textDecorationLine || cs.textDecoration || '');
+  if (decoration.includes('underline')) parts.push('<w:u w:val="single"/>');
   const size = cssSizeToHalfPoints(cs.fontSize);
   if (size) parts.push(`<w:sz w:val="${size}"/>`);
   const color = rgbToHexPlain(cs.color);
@@ -3068,27 +3150,45 @@ function nodeComputedRunXml(node){
   if (family) parts.push(`<w:rFonts w:ascii="${docxEscape(family)}" w:hAnsi="${docxEscape(family)}"/>`);
   return parts.length ? `<w:rPr>${parts.join('')}</w:rPr>` : '';
 }
+function elementParagraphPropertiesXml(el){
+  const cs = el ? getComputedStyle(el) : null;
+  if (!cs) return '';
+  const props = [];
+  const alignMap = { left: 'left', start: 'left', center: 'center', right: 'right', end: 'right', justify: 'both' };
+  const align = alignMap[String(cs.textAlign || '').toLowerCase()];
+  if (align) props.push(`<w:jc w:val="${align}"/>`);
+  const lineHeight = parseFloat(cs.lineHeight);
+  const fontSize = parseFloat(cs.fontSize) || 16;
+  if (Number.isFinite(lineHeight)) props.push(`<w:spacing w:line="${Math.round((lineHeight / fontSize) * 240)}" w:lineRule="auto"/>`);
+  return props.length ? `<w:pPr>${props.join('')}</w:pPr>` : '';
+}
 function elementToDocxParagraphs(el){
   const paragraphs = [];
   let runs = [];
+  let currentParagraphElement = el;
   function pushText(text, node){
-    if (!text) return;
+    if (text === null || text === undefined || text === '') return;
     runs.push(`<w:r>${nodeComputedRunXml(node)}<w:t xml:space="preserve">${docxEscape(text)}</w:t></w:r>`);
   }
-  function flush(){
-    paragraphs.push(`<w:p>${runs.join('')}</w:p>`);
+  function flush(paragraphElement = currentParagraphElement){
+    paragraphs.push(`<w:p>${elementParagraphPropertiesXml(paragraphElement)}${runs.join('')}</w:p>`);
     runs = [];
   }
   function walk(node){
     if (node.nodeType === Node.TEXT_NODE) { pushText(node.nodeValue, node); return; }
     if (node.nodeType !== Node.ELEMENT_NODE) return;
     const tag = node.tagName.toLowerCase();
-    if (tag === 'br') { flush(); return; }
+    if (tag === 'br') { flush(currentParagraphElement); return; }
+    const previousParagraphElement = currentParagraphElement;
+    if (['p','div','h1','h2','h3','li'].includes(tag)) currentParagraphElement = node;
     node.childNodes.forEach(walk);
-    if (['p','div','h1','h2','h3','li'].includes(tag)) flush();
+    if (['p','div','h1','h2','h3','li'].includes(tag)) {
+      flush(currentParagraphElement);
+      currentParagraphElement = previousParagraphElement;
+    }
   }
   el.childNodes.forEach(walk);
-  if (runs.length || !paragraphs.length) flush();
+  if (runs.length || !paragraphs.length) flush(currentParagraphElement);
   return paragraphs.filter(Boolean).join('');
 }
 function makeDocxBase64FromElement(el){
@@ -3605,6 +3705,7 @@ async function loadGithubFolderPortfolio(){
     media.filter(entry => !entry.isHero).forEach((entry, index) => {
       gallery.appendChild(makeGithubGalleryItem(entry, index));
     });
+    applyGalleryStaggerDelays();
     renderGithubHeroSlides(media.filter(entry => entry.isHero));
   } catch (error) {
     if (heroMedia) {
@@ -3654,30 +3755,136 @@ async function unzipDocxFile(buffer, wantedName){
   }
   return '';
 }
-function docxRunToHtml(run){
-  const texts = Array.from(run.getElementsByTagName('w:t')).map(n => n.textContent || '').join('');
-  if (!texts) return '';
-  const rPr = run.getElementsByTagName('w:rPr')[0];
+function getWAttr(node, name){
+  if (!node) return '';
+  return node.getAttribute(`w:${name}`) || node.getAttribute(name) || node.getAttributeNS('http://schemas.openxmlformats.org/wordprocessingml/2006/main', name) || '';
+}
+function wBoolOn(node){
+  if (!node) return false;
+  const v = String(getWAttr(node, 'val') || '').toLowerCase();
+  return !(v === '0' || v === 'false' || v === 'off' || v === 'none');
+}
+function firstChildByTag(node, tag){ return node ? node.getElementsByTagName(tag)[0] : null; }
+function twipsToPx(value){
+  const n = Number(value);
+  return Number.isFinite(n) ? Math.round(n / 15) : '';
+}
+function halfPointsToPx(value){
+  const n = Number(value);
+  return Number.isFinite(n) ? Math.round(n / 1.5) : '';
+}
+function collectDocxStyles(stylesXml){
+  const styles = { run: {}, paragraph: {} };
+  if (!stylesXml) return styles;
+  const doc = new DOMParser().parseFromString(stylesXml, 'application/xml');
+  Array.from(doc.getElementsByTagName('w:style')).forEach(style => {
+    const id = getWAttr(style, 'styleId');
+    if (!id) return;
+    const rPr = style.getElementsByTagName('w:rPr')[0];
+    const pPr = style.getElementsByTagName('w:pPr')[0];
+    if (rPr) styles.run[id] = runPropertiesToCss(rPr);
+    if (pPr) styles.paragraph[id] = paragraphPropertiesToCss(pPr);
+  });
+  const docDefaults = doc.getElementsByTagName('w:docDefaults')[0];
+  const defRPr = docDefaults?.getElementsByTagName('w:rPrDefault')[0]?.getElementsByTagName('w:rPr')[0];
+  const defPPr = docDefaults?.getElementsByTagName('w:pPrDefault')[0]?.getElementsByTagName('w:pPr')[0];
+  if (defRPr) styles.defaultRun = runPropertiesToCss(defRPr);
+  if (defPPr) styles.defaultParagraph = paragraphPropertiesToCss(defPPr);
+  return styles;
+}
+function runPropertiesToCss(rPr){
   const style = [];
-  if (rPr) {
-    if (rPr.getElementsByTagName('w:b').length) style.push('font-weight:700');
-    if (rPr.getElementsByTagName('w:i').length) style.push('font-style:italic');
-    const color = rPr.getElementsByTagName('w:color')[0]?.getAttribute('w:val');
-    if (color && color !== 'auto') style.push(`color:#${color}`);
-    const size = rPr.getElementsByTagName('w:sz')[0]?.getAttribute('w:val');
-    if (size) style.push(`font-size:${Math.round(Number(size) / 1.5)}px`);
-    const fonts = rPr.getElementsByTagName('w:rFonts')[0];
-    const fam = fonts?.getAttribute('w:ascii') || fonts?.getAttribute('w:hAnsi');
-    if (fam) style.push(`font-family:${fam.replace(/[;<>]/g,'')}`);
+  const b = firstChildByTag(rPr, 'w:b');
+  const i = firstChildByTag(rPr, 'w:i');
+  if (b && wBoolOn(b)) style.push('font-weight:700');
+  if (i && wBoolOn(i)) style.push('font-style:italic');
+  const u = firstChildByTag(rPr, 'w:u');
+  const uVal = String(getWAttr(u, 'val') || '').toLowerCase();
+  if (u && uVal !== 'none') {
+    style.push('text-decoration-line:underline');
+    if (['double','dotted','dash','dashed','wave','wavy'].includes(uVal)) {
+      const map = { dash: 'dashed', wave: 'wavy' };
+      style.push(`text-decoration-style:${map[uVal] || uVal}`);
+    }
+    const uColor = getWAttr(u, 'color');
+    if (uColor && uColor !== 'auto') style.push(`text-decoration-color:#${uColor}`);
   }
-  return `<span${style.length ? ` style="${style.join(';')}"` : ''}>${escapeHTML(texts)}</span>`;
+  const strike = firstChildByTag(rPr, 'w:strike');
+  if (strike && wBoolOn(strike)) style.push('text-decoration-line:line-through');
+  const color = getWAttr(firstChildByTag(rPr, 'w:color'), 'val');
+  if (color && color !== 'auto') style.push(`color:#${color}`);
+  const highlight = getWAttr(firstChildByTag(rPr, 'w:highlight'), 'val');
+  if (highlight) style.push(`background-color:${highlight}`);
+  const size = halfPointsToPx(getWAttr(firstChildByTag(rPr, 'w:sz'), 'val'));
+  if (size) style.push(`font-size:${size}px`);
+  const spacing = getWAttr(firstChildByTag(rPr, 'w:spacing'), 'val');
+  if (spacing) style.push(`letter-spacing:${twipsToPx(spacing)}px`);
+  const fonts = firstChildByTag(rPr, 'w:rFonts');
+  const fam = getWAttr(fonts, 'ascii') || getWAttr(fonts, 'hAnsi') || getWAttr(fonts, 'cs');
+  if (fam) style.push(`font-family:${fam.replace(/[;<>]/g,'')}`);
+  const vert = getWAttr(firstChildByTag(rPr, 'w:vertAlign'), 'val');
+  if (vert === 'superscript') style.push('vertical-align:super;font-size:.72em');
+  if (vert === 'subscript') style.push('vertical-align:sub;font-size:.72em');
+  const caps = firstChildByTag(rPr, 'w:caps');
+  if (caps && wBoolOn(caps)) style.push('text-transform:uppercase');
+  return style;
+}
+function paragraphPropertiesToCss(pPr){
+  const style = [];
+  const jc = getWAttr(firstChildByTag(pPr, 'w:jc'), 'val');
+  const alignMap = { both: 'justify', distribute: 'justify', start: 'left', end: 'right' };
+  if (jc) style.push(`text-align:${alignMap[jc] || jc}`);
+  const spacing = firstChildByTag(pPr, 'w:spacing');
+  const before = twipsToPx(getWAttr(spacing, 'before'));
+  const after = twipsToPx(getWAttr(spacing, 'after'));
+  if (before !== '') style.push(`margin-top:${before}px`);
+  if (after !== '') style.push(`margin-bottom:${after}px`);
+  const line = Number(getWAttr(spacing, 'line'));
+  if (Number.isFinite(line) && line > 0) style.push(`line-height:${(line / 240).toFixed(3)}`);
+  const ind = firstChildByTag(pPr, 'w:ind');
+  const left = twipsToPx(getWAttr(ind, 'left'));
+  const right = twipsToPx(getWAttr(ind, 'right'));
+  const first = twipsToPx(getWAttr(ind, 'firstLine'));
+  if (left !== '') style.push(`margin-left:${left}px`);
+  if (right !== '') style.push(`margin-right:${right}px`);
+  if (first !== '') style.push(`text-indent:${first}px`);
+  return style;
+}
+function mergedStyleString(...arrays){
+  return arrays.flat().filter(Boolean).join(';');
+}
+function docxRunToHtml(run, styles){
+  const chunks = [];
+  const rPr = run.getElementsByTagName('w:rPr')[0];
+  const rStyleId = getWAttr(firstChildByTag(rPr, 'w:rStyle'), 'val');
+  const style = mergedStyleString(styles.defaultRun || [], styles.run?.[rStyleId] || [], rPr ? runPropertiesToCss(rPr) : []);
+  const open = style ? `<span style="${style}">` : '<span>';
+  const close = '</span>';
+  Array.from(run.childNodes).forEach(child => {
+    if (child.nodeType !== Node.ELEMENT_NODE) return;
+    const tag = child.tagName;
+    if (tag === 'w:t') chunks.push(`${open}${escapeHTML(child.textContent || '')}${close}`);
+    else if (tag === 'w:tab') chunks.push(`${open}&emsp;${close}`);
+    else if (tag === 'w:br' || tag === 'w:cr') chunks.push('<br>');
+  });
+  return chunks.join('');
 }
 async function docxArrayBufferToHtml(buffer){
-  const xml = await unzipDocxFile(buffer, 'word/document.xml');
+  const [xml, stylesXml] = await Promise.all([
+    unzipDocxFile(buffer, 'word/document.xml'),
+    unzipDocxFile(buffer, 'word/styles.xml')
+  ]);
   if (!xml) return '';
+  const styles = collectDocxStyles(stylesXml);
   const doc = new DOMParser().parseFromString(xml, 'application/xml');
   const paras = Array.from(doc.getElementsByTagName('w:p'));
-  return paras.map(p => Array.from(p.getElementsByTagName('w:r')).map(docxRunToHtml).join('')).filter(Boolean).join('<br>');
+  return paras.map(p => {
+    const pPr = p.getElementsByTagName('w:pPr')[0];
+    const pStyleId = getWAttr(firstChildByTag(pPr, 'w:pStyle'), 'val');
+    const style = mergedStyleString(styles.defaultParagraph || [], styles.paragraph?.[pStyleId] || [], pPr ? paragraphPropertiesToCss(pPr) : []);
+    const inner = Array.from(p.childNodes).filter(n => n.nodeType === Node.ELEMENT_NODE && n.tagName === 'w:r').map(r => docxRunToHtml(r, styles)).join('');
+    return `<div${style ? ` style="${style}"` : ''}>${inner || '<br>'}</div>`;
+  }).join('');
 }
 async function loadDocxTextContent(config){
   const manifestPath = config?.textManifestPath || GITHUB_TEXT_MANIFEST_PATH;
@@ -3691,7 +3898,7 @@ async function loadDocxTextContent(config){
       const response = await fetch(githubAssetUrl(file.path), { cache: 'no-store' });
       if (!response.ok) continue;
       const html = await docxArrayBufferToHtml(await response.arrayBuffer());
-      if (html) el.innerHTML = html;
+      if (html) { el.innerHTML = html; if (typeof syncOverlayFonts === 'function') syncOverlayFonts(); }
     }
   } catch (error) { console.warn('Word text loading failed', error); }
 }
@@ -3738,4 +3945,4 @@ githubPortfolioBoot.catch(error => console.warn('Portfolio background loading fa
 
 
 </script>
-<zbd-wktjjrphqfdr></zbd-wktjjrphqfdr><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31963291dcaae9a',t:'MTc4NzgxNTk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31a9b6e096fbd90',t:'MTc4NzgyODc4OQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><qbj-buocvykcqolv></qbj-buocvykcqolv></body></html>
+<zbd-wktjjrphqfdr></zbd-wktjjrphqfdr><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31963291dcaae9a',t:'MTc4NzgxNTk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31ad26bdc938c31',t:'MTc4NzgzMTA0MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><agc-gghuarseibyl></agc-gghuarseibyl></body></html>
