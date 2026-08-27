@@ -2,49 +2,60 @@
   "version": 2,
   "files": {
     "images/01 (1).jpg": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/04e1767694450915de09.webp"
     },
     "images/01_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh - hero.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/694fe07d040d6c2f97c7.webp"
     },
     "images/02_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/9a7f4784c53a01942010.webp"
     },
     "images/03_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/fedde435c617d65b60ec.webp"
     },
     "images/04_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/0cf4ad6cedf24cae17d3.webp"
     },
     "images/05_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/4ab11477bed1c073d7b7.webp"
     },
     "images/06_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/26f572208afd8c8e135b.webp"
     },
     "images/07_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/27fb907448de7898da05.webp"
     },
     "images/08_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/af2230b23bfe6be98842.webp"
     },
     "images/09_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/e7985c7f1bd5a7b88f1c.webp"
     },
     "images/1.jpg": {
-"images/1.jpg": {
       "kind": "image",
       "preview": ".portfolio-media/2b28cdc6205e26fef6a2.webp"
     },
     "images/10_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/b6be04bed50fa87ca021.webp"
     },
     "images/11_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/55f97db37b5cb149490e.webp"
     },
     "images/12_ Kasauli Trident - STAD - Kasauli,  - Himachal Pradesh.png": {
-      "kind": "image"
-    }
+      "kind": "image",
+      "preview": ".portfolio-media/b6c93e53f7d7fab7b630.webp"
     }
   }
 }
