@@ -1364,6 +1364,39 @@ body.content-ready footer {
   .cols { column-count: 2 !important; column-gap: 10px !important; }
   .item { margin-bottom: 16px !important; }
 }
+
+
+/* ================= ROW-WISE KIASM-STYLE MASONRY ORDER ================= */
+/* Explicit columns keep the Kiasm-like stagger, while JS places items as
+   01/02/03 across the top row, then 04/05/06, etc. */
+.cols.masonry-layout {
+  display: grid !important;
+  grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  column-count: unset !important;
+  column-gap: 0 !important;
+  gap: 28px !important;
+  align-items: start !important;
+}
+.masonry-col {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  min-width: 0;
+}
+.cols.masonry-layout .item {
+  display: block !important;
+  width: 100% !important;
+  margin: 0 !important;
+  break-inside: auto !important;
+}
+@media (max-width: 1000px) {
+  .cols.masonry-layout { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 22px !important; }
+  .masonry-col { gap: 22px; }
+}
+@media (max-width: 640px) {
+  .cols.masonry-layout { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; gap: 10px !important; }
+  .masonry-col { gap: 16px; }
+}
 </style>
 <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"><style id="roleStyles">.editable[data-role="title"], .github-role[data-role="title"]{font-family:"DM Sans", Helvetica, sans-serif;font-size:20px;}
 </style><link href="https://fonts.googleapis.com" id="googleFontsPreconnect" rel="preconnect"><link crossorigin="" href="https://fonts.gstatic.com" id="googleFontsStaticPreconnect" rel="preconnect"><link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700&amp;family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700&amp;family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,600;9..144,700&amp;family=Inter:wght@300;400;500;600;700&amp;family=Manrope:wght@300;400;500;600;700;800&amp;family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;family=Outfit:wght@300;400;500;600;700;800&amp;family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Urbanist:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&amp;display=swap" id="portfolioGoogleFonts" rel="stylesheet"><script type="application/json" id="githubPortfolioConfig">{"owner":"altrunestudio-lab","repo":"altrune-portfolio","branch":"main","imagesPath":"images","manifestPath":"media-manifest.json","textManifestPath":"text/text-manifest.json","toursPath":"tours"}</script></head>
@@ -1403,31 +1436,31 @@ body.content-ready footer {
 <div class="hero-dots" id="heroDots"></div>
 </div>
 <div class="hero-caption">
-<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">The Gate</h1>
+<h1 class="hero-name editable" data-field="hero.name" data-role="hero-name" id="heroName">Ribbon Facade</h1>
 <div class="hero-meta">
-<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Nord Architects</span>
+<span class="editable" data-field="hero.architect" data-role="hero-meta" id="hmArchitect">Meridian Design</span>
 <span class="dot">·</span>
-<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Kyoto, Japan</span>
+<span class="editable" data-field="hero.location" data-role="hero-meta" id="hmLocation">Milan, Italy</span>
 <span class="dot">·</span>
 <span class="editable" data-field="hero.year" data-role="hero-meta" id="hmYear">2024</span>
 </div>
 </div>
 </section>
-<section class="strapline in-view" data-reveal="">
+<section class="strapline" data-reveal="">
 <p class="editable" data-field="strapline" data-role="strapline"><span data-inline-format="true" style="font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;"><span data-inline-format="true" style="color: rgb(0, 0, 0);">We believe the future should be experienced before it exists. We combine storytelling &amp; technology at their core</span> <span data-inline-format="true" style="color: rgb(210, 144, 30);"><span data-inline-format="true" style="color: rgb(255, 162, 0);">- We’re architects who happen to be great at rendering.</span>&nbsp;&nbsp;</span></span></p>
 </section>
-<section class="about in-view" data-reveal="" id="about">
+<section class="about" data-reveal="" id="about">
 <div class="about-inner editable" data-field="about" data-role="about">Altrune is a 3D visualization studio crafting architectural imagery, product renders and spatial studies. We work with architects, developers and designers to turn drawings into light, texture and atmosphere.</div>
 </section>
-<div class="section-label in-view" data-reveal="">
+<div class="section-label" data-reveal="">
 <span class="idx">01</span>
 <h2 class="editable" data-field="workTitle" data-role="section">Selected Work</h2>
 <span class="line"></span>
 </div>
 <main id="work">
-<div class="cols" id="cols"></div>
+<div class="cols masonry-layout" id="cols"></div>
 </main>
-<section class="tour-section in-view" id="tours" data-reveal="" hidden="">
+<section class="tour-section" id="tours" data-reveal="" hidden="">
   <div class="tour-head">
     <h2 class="tour-title editable" data-field="tourTitle" data-role="section">360 Tours</h2>
     <div aria-label="360 tour tabs" class="tour-tabs" id="tourTabs" role="tablist"></div>
@@ -1459,7 +1492,7 @@ body.content-ready footer {
 </div>
 </section><footer id="contact">
 <div class="footer-top">
-<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><span data-inline-format="true" style="font-style: normal; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;"></span><span data-inline-format="true" style="color: rgb(0, 0, 0);"><span data-inline-format="true" style="font-style: normal; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;"></span><span data-inline-format="true" style="font-style: italic; font-family: Fraunces, Georgia, serif;"><span data-inline-format="true" style="font-style: normal; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;">Let's Talk-&nbsp;<br><span data-inline-format="true" style="color: rgb(255, 115, 0);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71301d0503041f1402050415181e31161c10181d5f121e1c">[altrunestudio@gmail.com]</a></span></span></span></span><span style="color: rgb(255, 123, 0); font-family: &quot;DM Sans&quot;, Helvetica, sans-serif; font-style: normal; font-size: clamp(30px, 5vw, 56px);"></span></p>
+<p class="footer-cta editable" data-field="cta" data-role="cta">Have a project in mind?<br><span data-inline-format="true" style="font-style: normal; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;"></span><span data-inline-format="true" style="color: rgb(0, 0, 0);"><span data-inline-format="true" style="font-style: normal; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;"></span><span data-inline-format="true" style="font-style: italic; font-family: Fraunces, Georgia, serif;"><span data-inline-format="true" style="font-style: normal; font-family: &quot;DM Sans&quot;, Helvetica, sans-serif;">Let's Talk-&nbsp;<br><span data-inline-format="true" style="color: rgb(255, 115, 0);"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="71301d0503041f1402050415181e31161c10181d5f121e1c">[<span style="color: rgb(255, 115, 0); font-family: &quot;DM Sans&quot;; font-style: italic;">altrunestudio@gmail.com</span>]</a></span></span></span></span><span style="color: rgb(255, 123, 0); font-family: &quot;DM Sans&quot;, Helvetica, sans-serif; font-style: normal; font-size: clamp(30px, 5vw, 56px);"></span></p>
 
 </div>
 <div class="footer-bottom">
@@ -1543,12 +1576,11 @@ function initRevealOnScroll(){
   if ('IntersectionObserver' in window) {
     revealObserver = new IntersectionObserver((entries) => {
       entries.forEach(en => {
-        if (en.isIntersecting) {
-          en.target.classList.add('in-view');
-          revealObserver.unobserve(en.target);
-        }
+        // Fade in when scrolling down or back up into view; fade out again
+        // when leaving the viewport so the animation can replay both ways.
+        en.target.classList.toggle('in-view', en.isIntersecting);
       });
-    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    }, { threshold: 0.12, rootMargin: '-6% 0px -6% 0px' });
     document.querySelectorAll('[data-reveal], .item').forEach(el => revealObserver.observe(el));
   } else {
     document.querySelectorAll('[data-reveal], .item').forEach(el => el.classList.add('in-view'));
@@ -2102,6 +2134,7 @@ function wireItem(fig){
       e.stopPropagation();
       const wasFeatured = isFeatured(fig);
       fig.remove();
+      if (typeof applyGalleryStaggerDelays === 'function') applyGalleryStaggerDelays();
       if (heroReady && wasFeatured) syncHeroFromFeatured();
     });
   }
@@ -2140,8 +2173,61 @@ function wireItem(fig){
 }
 
 document.querySelectorAll('.item').forEach(wireItem);
-function applyGalleryStaggerDelays(){ document.querySelectorAll('.item').forEach((item, index) => item.style.setProperty('--item-delay', `${Math.min(index, 12) * 80}ms`)); }
+let masonryOrderCounter = 0;
+let masonryColumnCount = 0;
+function galleryColumnCount(){
+  if (window.matchMedia('(max-width: 1000px)').matches) return 2;
+  return 3;
+}
+function normaliseGalleryOrder(gallery){
+  const directNewItems = Array.from(gallery.children).filter(child => child.matches?.('.item') && !child.dataset.masonryOrder);
+  if (directNewItems.length) {
+    gallery.querySelectorAll('.item[data-masonry-order]').forEach(item => {
+      item.dataset.masonryOrder = String(Number(item.dataset.masonryOrder || 0) + directNewItems.length);
+    });
+    directNewItems.forEach((item, index) => item.dataset.masonryOrder = String(index));
+  }
+  const items = Array.from(gallery.querySelectorAll('.item'));
+  items.forEach(item => {
+    if (!item.dataset.masonryOrder) item.dataset.masonryOrder = String(masonryOrderCounter++);
+  });
+  masonryOrderCounter = Math.max(masonryOrderCounter, ...items.map(item => Number(item.dataset.masonryOrder) + 1).filter(Number.isFinite), 0);
+  return items.sort((a, b) => Number(a.dataset.masonryOrder) - Number(b.dataset.masonryOrder));
+}
+function applyMasonryLayout(){
+  const gallery = document.getElementById('cols');
+  if (!gallery) return;
+  const count = galleryColumnCount();
+  const items = normaliseGalleryOrder(gallery);
+  gallery.innerHTML = '';
+  gallery.classList.add('masonry-layout');
+  masonryColumnCount = count;
+  const columns = Array.from({ length: count }, (_, index) => {
+    const col = document.createElement('div');
+    col.className = 'masonry-col';
+    col.dataset.column = String(index + 1);
+    gallery.appendChild(col);
+    return col;
+  });
+  // Row-wise assignment: 01/02/03 sit across the first visual row;
+  // 04/05/06 become the next entries in those same straight columns.
+  items.forEach((item, index) => columns[index % count].appendChild(item));
+}
+function applyGalleryStaggerDelays(){
+  applyMasonryLayout();
+  Array.from(document.querySelectorAll('#cols .item'))
+    .sort((a, b) => Number(a.dataset.masonryOrder || 0) - Number(b.dataset.masonryOrder || 0))
+    .forEach((item, index) => item.style.setProperty('--item-delay', `${Math.min(index, 12) * 80}ms`));
+}
 applyGalleryStaggerDelays();
+let masonryResizeTimer = null;
+window.addEventListener('resize', () => {
+  clearTimeout(masonryResizeTimer);
+  masonryResizeTimer = setTimeout(() => {
+    const next = galleryColumnCount();
+    if (next !== masonryColumnCount) applyGalleryStaggerDelays();
+  }, 160);
+});
 
 /* ================= ADD PROJECT ================= */
 const projModal = document.getElementById('projModal');
@@ -3702,6 +3788,8 @@ async function loadGithubFolderPortfolio(){
       .sort((a, b) => (a.sequence - b.sequence) || a.path.localeCompare(b.path, undefined, { numeric: true, sensitivity: 'base' }));
 
     gallery.innerHTML = '';
+    masonryOrderCounter = 0;
+    masonryColumnCount = 0;
     media.filter(entry => !entry.isHero).forEach((entry, index) => {
       gallery.appendChild(makeGithubGalleryItem(entry, index));
     });
@@ -3945,4 +4033,4 @@ githubPortfolioBoot.catch(error => console.warn('Portfolio background loading fa
 
 
 </script>
-<zbd-wktjjrphqfdr></zbd-wktjjrphqfdr><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31963291dcaae9a',t:'MTc4NzgxNTk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31ad26bdc938c31',t:'MTc4NzgzMTA0MQ=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><agc-gghuarseibyl></agc-gghuarseibyl></body></html>
+<zbd-wktjjrphqfdr></zbd-wktjjrphqfdr><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31963291dcaae9a',t:'MTc4NzgxNTk5OA=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><script>(function(){function c(){var b=a.contentDocument||(a.contentWindow&&a.contentWindow.document);if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'a31ae9e5bf15b54c',t:'MTc4NzgzMjAwMw=='};var a=document.createElement('script');a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script><iframe height="1" width="1" style="position: absolute; top: 0px; left: 0px; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; visibility: hidden;"></iframe><snf-rfhigvrciqju></snf-rfhigvrciqju></body></html>
