@@ -2,316 +2,420 @@
   "version": 2,
   "files": {
     "images/01_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8dc82fc9cc73180210eb.webp"
     },
     "images/02_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/31ca4e3c08a6dc8c2959.webp"
     },
     "images/03_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/f3f1a84532812b18e1c4.webp"
     },
     "images/04_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/070f9083cfd773a896ca.webp"
     },
     "images/05_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/da7844e988d25fdf1785.webp"
     },
     "images/06_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/e1e1328dde0de91ea11d.webp"
     },
     "images/07_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/b992b6ed3acb9d038071.webp"
     },
     "images/08_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/cc72985b81f09db09c1f.webp"
     },
     "images/09_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/abbaea3359343b754bdd.webp"
     },
     "images/100_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/3568b2601a1ecdc04d78.webp"
     },
     "images/101_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/fa47a1664c93e9dbc902.webp"
     },
     "images/102_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/6b43cd1dbb9af61fb59d.webp"
     },
     "images/103_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/74c5f04e417c8baa2b38.webp"
     },
     "images/104_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/3dd8beeaf05b1bc121b8.webp"
     },
     "images/105_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8cc2543e53bd9b2a7938.webp"
     },
     "images/10_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/6f16aa6613b82926191c.webp"
     },
     "images/11_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8404f01956941bf9b34e.webp"
     },
     "images/12_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/c30374ba13b8211ce37d.webp"
     },
     "images/13_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/6884985b131d6c7668df.webp"
     },
     "images/14_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/de7f02b46f97d28b81e2.webp"
     },
     "images/15_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/149a50ccc3188ef67332.webp"
     },
     "images/16_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/f85d100e9706954352bc.webp"
     },
     "images/17_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/eeed2b9361bb890ba37c.webp"
     },
     "images/18_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8ac1f06af2f04f81292f.webp"
     },
     "images/19_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/a6bcc31fe1eb5ff78057.webp"
     },
     "images/20_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/c76cd4a97e23573f94f5.webp"
     },
     "images/21_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/b3c5baf98fe3a469affe.webp"
     },
     "images/22_ Karyan NINE - STA+D - NH-9 - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/c5078e7b1a72269a1cbd.webp"
     },
     "images/23_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/dec7bd74b5606de5e30d.webp"
     },
     "images/24_ B56 - STA+D - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/14a20957e924228cf3d0.webp"
     },
     "images/25_ B56 - STA+D - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/389261cc88d146d75e85.webp"
     },
     "images/26_ B56 - STA+D - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/87a056bf612b5dd1db24.webp"
     },
     "images/27_ B56 - STA+D - Undisclosed - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/29bc317680df6ad54fb8.webp"
     },
     "images/28_ B56 - STA+D - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/46e66dd158e000373c29.webp"
     },
     "images/29_ B56 - STA+D - Undisclosed - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/dd97ab58ffd60939b82a.webp"
     },
     "images/30_ Westfield - Archit Group - Nasik, Mumbai - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/2197f6624b27c37dc703.webp"
     },
     "images/31_ Westfield - Archit Group - Nasik, Mumbai - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/11de4b85211f24368a1a.webp"
     },
     "images/32_ Westfield - Archit Group - Nasik, Mumbai - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/2a9ed131c257336e20d1.webp"
     },
     "images/33_ Westfield - Archit Group - Nasik, Mumbai - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/debb8fe4c121e6079b4a.webp"
     },
     "images/34_ Westfield - Archit Group - Nasik, Mumbai - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/803427c80bcc9b10f092.webp"
     },
     "images/35_ Westfield - Archit Group - Nasik, Mumbai - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/e67df0d76e8833411474.webp"
     },
     "images/36_ Westfield - Archit Group - Nasik, Mumbai - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/e9b73de922b12c23d263.webp"
     },
     "images/37_ Westfield - Archit Group - Nasik, Mumbai - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/e51abd829659fcd5d30a.webp"
     },
     "images/38_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/41112a6cfd2991747433.webp"
     },
     "images/39_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/6bd7de78f2bf2f8880fb.webp"
     },
     "images/40_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/36656f98e36dd7ee0321.webp"
     },
     "images/41_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/66999fbf25eec5972fe6.webp"
     },
     "images/42_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/ac4d14f25eb00b69d5bf.webp"
     },
     "images/43_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8d63fb2c2cd160f6e406.webp"
     },
     "images/44_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/4350ccdf454c9c2daa3b.webp"
     },
     "images/45_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/84e82adb6bd5aa6764a3.webp"
     },
     "images/46_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/2af9c3d484468dc26f34.webp"
     },
     "images/47_ NFC - Matra Arcitects - Undisclosed - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/2dbe5dba80d5b4e0646f.webp"
     },
     "images/48_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/f5debd820b0ed71cd690.webp"
     },
     "images/49_ Tangmarg - Matra Architects - Undisclosed - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/f7bc0469f74904271696.webp"
     },
     "images/50_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/658de8b3afaea21c93fc.webp"
     },
     "images/52_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/653c937fd86991312aef.webp"
     },
     "images/53_ Tangmarg - Matra Architects - Undisclosed - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/c42a523264be87e5c49b.webp"
     },
     "images/54_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/805998fe22a9da4641e3.webp"
     },
     "images/55_ Fitness Studio - Gemba Design Studio - Kalkaji, New Delhi - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/b7f46951dd90fa69671d.webp"
     },
     "images/56_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/079019a372ce11fc921c.webp"
     },
     "images/57_ Fitness Studio - Gemba Design Studio - Kalkaji, New Delhi - 2026.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/fbf0330aed5ce0eb04ce.webp"
     },
     "images/58_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/6c2c6facfe562aa5dede.webp"
     },
     "images/59_ Fitness Studio - Gemba Design Studio - Kalkaji, New Delhi - 2026 (2).webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/a0c10ab92b8a385773c9.webp"
     },
     "images/60_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/d944fb63be94ddb5f7a7.webp"
     },
     "images/61_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/469b8f00dec41afadf44.webp"
     },
     "images/62_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/e77751e57122268718a3.webp"
     },
     "images/63_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/a8b09ce9b085d4d24760.webp"
     },
     "images/64_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/439b9ce49908f8c7d7fb.webp"
     },
     "images/65_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/3103f44981b5ed135903.webp"
     },
     "images/66_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8298439b3a4c3f8fe6c6.webp"
     },
     "images/67_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/437273ab6975e283ce58.webp"
     },
     "images/68_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8a3f0f644bcf6cfee388.webp"
     },
     "images/69_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/50887bf1ac5944994274.webp"
     },
     "images/70_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/18dcac8d33393e899037.webp"
     },
     "images/71_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/ca1c4d883f444f36b1cd.webp"
     },
     "images/72_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/05a4962de094f57c31d4.webp"
     },
     "images/73_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/5fc3505144f221abc655.webp"
     },
     "images/74_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/9ec33dc167a45a550c10.webp"
     },
     "images/75_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/c569acdaaa565738b535.webp"
     },
     "images/76_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/c94d8bb320cb2bb9bc3f.webp"
     },
     "images/77_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/6a6ece7b82dd1397930d.webp"
     },
     "images/78_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/27790c181accb8d329e7.webp"
     },
     "images/79_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/96267a03e6306fa879c7.webp"
     },
     "images/80_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/184b3655d5c921337f45.webp"
     },
     "images/81_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/11998b5ee449a594bafc.webp"
     },
     "images/82_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/080d927b29309b681492.webp"
     },
     "images/83_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/8008ee3b074d09922c7f.webp"
     },
     "images/84_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/e9175cf2acdeda99284f.webp"
     },
     "images/85_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/2ed5715f3c3b43151cb2.webp"
     },
     "images/86_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/a92634971454fe9e3b8d.webp"
     },
     "images/87_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/d751d123c33727a4a221.webp"
     },
     "images/88_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/7b5f8829659e210131c9.webp"
     },
     "images/89_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/c82e6f05540d030e9606.webp"
     },
     "images/90_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/6b1bf7da232e5bfb41d3.webp"
     },
     "images/91_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/ca8f780366f0b38570d3.webp"
     },
     "images/92_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/df3cae58e206190ccfef.webp"
     },
     "images/93_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/3320dc84ee3a3c6e1929.webp"
     },
     "images/94_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/766bcab367838844220d.webp"
     },
     "images/95_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/ae9d479b3d68abf9b8e9.webp"
     },
     "images/96_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/ffc03b2eb1129675277e.webp"
     },
     "images/97_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/fb8674ebb32ed7f3604a.webp"
     },
     "images/98_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/7d877bbd526afd7c428e.webp"
     },
     "images/99_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image"
+      "kind": "image",
+      "preview": ".portfolio-media/a4b7a52a48bb158f9882.webp"
     }
   }
 }
