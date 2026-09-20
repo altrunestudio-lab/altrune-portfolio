@@ -1,42 +1,46 @@
 {
   "version": 2,
   "files": {
+<<<<<<< Updated upstream
     "images/01_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
       "kind": "image",
       "preview": ".portfolio-media/fbad1a0049d9435101a3.webp"
+=======
+    "images/01_ House of Framed Views - STA+D - New Delhi - 2026.webp": {
+      "kind": "image"
+>>>>>>> Stashed changes
     },
-    "images/02_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/31ca4e3c08a6dc8c2959.webp"
+    "images/02_ House of Framed Views - STA+D - New Delhi - 2026 - hero.webp": {
+      "kind": "image"
     },
-    "images/03_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/f3f1a84532812b18e1c4.webp"
+    "images/03_ House of Framed Views - STA+D - New Delhi - 2026.webp": {
+      "kind": "image"
     },
+<<<<<<< Updated upstream
     "images/04_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
       "kind": "image",
       "preview": ".portfolio-media/e9c6a92ee675023fa198.webp"
+=======
+    "images/04_ House of Framed Views - STA+D - New Delhi - 2026.webp": {
+      "kind": "image"
+>>>>>>> Stashed changes
     },
-    "images/05_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/da7844e988d25fdf1785.webp"
+    "images/05_ House of Framed Views - STA+D - New Delhi - 2026.webp": {
+      "kind": "image"
     },
-    "images/06_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/e1e1328dde0de91ea11d.webp"
+    "images/06_ House of Framed Views - STA+D - New Delhi - 2026.webp": {
+      "kind": "image"
     },
-    "images/07_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/b992b6ed3acb9d038071.webp"
+    "images/07_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
     },
     "images/08_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/cc72985b81f09db09c1f.webp"
+      "kind": "image"
     },
     "images/09_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/abbaea3359343b754bdd.webp"
+      "kind": "image"
     },
+<<<<<<< Updated upstream
     "images/100_ Untitled - Unknown Studio - Unknown Location - 0000 (2).webp": {
       "kind": "image",
       "preview": ".portfolio-media/3a44dd5f306dfec3624e.webp"
@@ -64,48 +68,79 @@
     "images/11_ Karyan NINE - STA+D - NH-9 - 2026 - hero.webp": {
       "kind": "image",
       "preview": ".portfolio-media/d2708b73038c3fbf7ba2.webp"
+=======
+    "images/100_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     },
-    "images/12_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/c30374ba13b8211ce37d.webp"
+    "images/101_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     },
-    "images/13_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/6884985b131d6c7668df.webp"
+    "images/102_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     },
-    "images/14_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/de7f02b46f97d28b81e2.webp"
+    "images/103_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     },
-    "images/15_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/149a50ccc3188ef67332.webp"
+    "images/104_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     },
-    "images/16_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/f85d100e9706954352bc.webp"
+    "images/105_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     },
-    "images/17_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/eeed2b9361bb890ba37c.webp"
+    "images/106_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/107_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+>>>>>>> Stashed changes
+    },
+    "images/108_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/109_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/10_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
+    },
+    "images/110_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/11_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
+    },
+    "images/12_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
+    },
+    "images/13_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
+    },
+    "images/14_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
+    },
+    "images/15_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026.webp": {
+      "kind": "image"
+    },
+    "images/16_ Kasauli Trident - STA+D - Kasauli, Himachal Pradesh - 2026 - hero.webp": {
+      "kind": "image"
+    },
+    "images/17_ Karyan NINE - STA+D - NH-9 - 2026 - hero.webp": {
+      "kind": "image"
     },
     "images/18_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/8ac1f06af2f04f81292f.webp"
+      "kind": "image"
     },
     "images/19_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/a6bcc31fe1eb5ff78057.webp"
+      "kind": "image"
     },
     "images/20_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/c76cd4a97e23573f94f5.webp"
+      "kind": "image"
     },
-    "images/21_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/b3c5baf98fe3a469affe.webp"
+    "images/21_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
+      "kind": "image"
     },
     "images/22_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
+<<<<<<< Updated upstream
       "kind": "image",
       "preview": ".portfolio-media/398f38aa910e8bfc67d9.webp"
     },
@@ -188,24 +223,90 @@
     "images/42_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
       "kind": "image",
       "preview": ".portfolio-media/8e1ece71e3cfd05decb3.webp"
+=======
+      "kind": "image"
     },
-    "images/43_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/8d63fb2c2cd160f6e406.webp"
+    "images/23_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
+      "kind": "image"
+    },
+    "images/24_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
+      "kind": "image"
+    },
+    "images/25_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
+      "kind": "image"
+    },
+    "images/26_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
+      "kind": "image"
+    },
+    "images/27_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/28_ Karyan NINE - STA+D - NH-9 - 2026.webp": {
+      "kind": "image"
+    },
+    "images/29_ B56 - STA+D - Undisclosed - 2026.webp": {
+      "kind": "image"
+    },
+    "images/30_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/31_ B56 - STA+D - Undisclosed - 2026 - hero.webp": {
+      "kind": "image"
+    },
+    "images/32_ Westfield - Archit Group - Nasik, Mumbai - 2026.webp": {
+      "kind": "image"
+    },
+    "images/33_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/34_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/35_ Untitled - Unknown Studio - Unknown Location - 0000 - hero.webp": {
+      "kind": "image"
+    },
+    "images/36_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/37_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
+      "kind": "image"
+    },
+    "images/38_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
+      "kind": "image"
+    },
+    "images/39_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/40_ Jindal - Matra Architects - Undisclosed - 2026.webp": {
+      "kind": "image"
+    },
+    "images/41_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/42_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+>>>>>>> Stashed changes
+    },
+    "images/43_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
     },
     "images/44_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/4350ccdf454c9c2daa3b.webp"
+      "kind": "image"
     },
+<<<<<<< Updated upstream
     "images/45_ NFC - Matra Arcitects - Undisclosed - 2026 - hero.webp": {
       "kind": "image",
       "preview": ".portfolio-media/982b27b8277113f14694.webp"
+=======
+    "images/45_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
+      "kind": "image"
+>>>>>>> Stashed changes
     },
-    "images/46_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
-      "kind": "image",
-      "preview": ".portfolio-media/2af9c3d484468dc26f34.webp"
+    "images/46_ NFC - Matra Arcitects - Undisclosed - 2026 - hero.webp": {
+      "kind": "image"
     },
     "images/47_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
+<<<<<<< Updated upstream
       "kind": "image",
       "preview": ".portfolio-media/19373f6287060f9b4c8d.webp"
     },
@@ -416,6 +517,165 @@
     "images/99_ Untitled - Unknown Studio - Unknown Location - 0000 (2).webp": {
       "kind": "image",
       "preview": ".portfolio-media/0e89059ed53bf6788f95.webp"
+=======
+      "kind": "image"
+    },
+    "images/48_ NFC - Matra Arcitects - Undisclosed - 2026.webp": {
+      "kind": "image"
+    },
+    "images/49_ Tangmarg - Matra Architects - Undisclosed - 2026.webp": {
+      "kind": "image"
+    },
+    "images/50_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/51_ Untitled - Unknown Studio - Unknown Location - 0000 - hero.webp": {
+      "kind": "image"
+    },
+    "images/52_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/53_ Fitness Studio - Gemba Design Studio - Kalkaji, New Delhi - 2026.webp": {
+      "kind": "image"
+    },
+    "images/54_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/55_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/56_ Untitled - Unknown Studio - Unknown Location - 0000 - hero.webp": {
+      "kind": "image"
+    },
+    "images/57_ Untitled - Unknown Studio - Unknown Location - 0000 - hero.webp": {
+      "kind": "image"
+    },
+    "images/58_ Untitled - Unknown Studio - Unknown Location - 0000 - hero.webp": {
+      "kind": "image"
+    },
+    "images/59_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/60_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/61_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/62_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/63_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/64_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/65_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/66_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/67_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/68_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/69_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/70_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/71_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/72_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/73_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/74_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/75_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/76_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/77_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/78_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/79_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/80_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/81_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/82_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/83_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/84_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/85_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/86_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/87_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/88_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/89_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/90_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/91_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/92_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/93_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/94_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/95_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/96_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/97_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/98_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+    },
+    "images/99_ Untitled - Unknown Studio - Unknown Location - 0000.webp": {
+      "kind": "image"
+>>>>>>> Stashed changes
     }
   }
 }
