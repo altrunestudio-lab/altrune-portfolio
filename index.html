@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-hero-timing="2" lang="en" data-page-margin="100" style="--page-margin: 100px; --gallery-image-pad-x: 22px; --gallery-image-pad-y: 28px;" data-gallery-image-pad-x="22" data-gallery-image-pad-y="28" data-exported="true" data-github-portfolio="folder-sync"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+<html data-hero-timing="6" lang="en" data-page-margin="100" style="--page-margin: 100px; --gallery-image-pad-x: 22px; --gallery-image-pad-y: 28px;" data-gallery-image-pad-x="22" data-gallery-image-pad-y="28" data-exported="true" data-github-portfolio="folder-sync"><head><meta content="text/html; charset=utf-8" http-equiv="Content-Type">
 <meta content="width=device-width, initial-scale=1.0" name="viewport">
 <title>Altrune — 3D Visualization</title>
 <link href="https://fonts.googleapis.com/" rel="preconnect">
@@ -2300,7 +2300,7 @@ function normaliseHeroTiming(){
   // timing on <html> and use that value when the public viewer starts.
   const raw = heroTiming ? heroTiming.value : document.documentElement.dataset.heroTiming;
   const parsed = Number(raw);
-  const seconds = Number.isFinite(parsed) ? Math.min(30, Math.max(2, Math.round(parsed))) : 5;
+  const seconds = Number.isFinite(parsed) ? Math.min(30, Math.max(2, Math.round(parsed))) : 6;
   document.documentElement.dataset.heroTiming = String(seconds);
   if (heroTiming) {
     heroTiming.value = String(seconds);
@@ -3790,7 +3790,7 @@ async function loadGithubFolderPortfolio(){
     gallery.innerHTML = '';
     masonryOrderCounter = 0;
     masonryColumnCount = 0;
-    media.filter(entry => !entry.isHero).forEach((entry, index) => {
+    media.forEach((entry, index) => {
       gallery.appendChild(makeGithubGalleryItem(entry, index));
     });
     applyGalleryStaggerDelays();
