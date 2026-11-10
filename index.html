@@ -1199,10 +1199,17 @@ body.is-loading { overflow: hidden !important; }
   text-align: center;
   text-transform: uppercase;
 }
+.youtube-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+@media (max-width: 760px) {
+  .youtube-grid { grid-template-columns: 1fr; gap: 18px; }
+}
 .youtube-frame-wrap {
   position: relative;
-  width: min(1180px, 100%);
-  margin: 0 auto;
+  width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
   background: #111;
@@ -1470,11 +1477,14 @@ body.content-ready footer {
     <div class="tour-empty" id="tourEmpty" style="display: flex;">Upload 3DVista tour folders to tours/. Each tour folder should contain its own index.html and assets.</div>
   </div>
 </section>
-<section class="youtube-section in-view" id="youtubeFeature" data-youtube-url="https://youtu.be/ZDhJkvCi4tg?si=lmAA9D2Bf3Lcd6bs" data-reveal="">
+<section class="youtube-section in-view" id="youtubeFeature" data-reveal="">
   <div class="youtube-head">
     <h2 class="youtube-title editable" data-field="youtubeTitle" data-role="section">Featured video</h2>
   </div>
-  <div class="youtube-frame-wrap" id="youtubeFrameWrap"><iframe title="Featured YouTube video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/ZDhJkvCi4tg?rel=0&amp;modestbranding=1"></iframe></div>
+  <div class="youtube-grid">
+    <div class="youtube-frame-wrap" data-youtube-url="https://youtu.be/6XqbIa2q7T8"><iframe title="Featured YouTube video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/6XqbIa2q7T8?rel=0&amp;modestbranding=1"></iframe></div>
+    <div class="youtube-frame-wrap" data-youtube-url="https://youtu.be/ZDhJkvCi4tg?si=lmAA9D2Bf3Lcd6bs"><iframe title="Featured YouTube video" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="" src="https://www.youtube-nocookie.com/embed/ZDhJkvCi4tg?rel=0&amp;modestbranding=1"></iframe></div>
+  </div>
 </section>
 <section class="studio-info" id="studioInfo">
 <div class="studio-info-inner">
@@ -2777,27 +2787,34 @@ function youtubeIdFromUrl(value){
 }
 function renderYoutubeEmbed(){
   const section = document.getElementById('youtubeFeature');
-  const wrap = document.getElementById('youtubeFrameWrap');
-  if (!section || !wrap) return;
-  const id = youtubeIdFromUrl(section.dataset.youtubeUrl || '');
-  wrap.innerHTML = '';
-  if (!id) {
-    section.hidden = !document.body.classList.contains('editing');
-    const placeholder = document.createElement('div');
-    placeholder.className = 'youtube-placeholder';
-    placeholder.id = 'youtubePlaceholder';
-    placeholder.textContent = 'Set a YouTube link in edit mode. The public page shows a large landscape thumbnail and does not autoplay.';
-    wrap.appendChild(placeholder);
-    return;
-  }
-  section.hidden = false;
-  const iframe = document.createElement('iframe');
-  iframe.title = 'Featured YouTube video';
-  iframe.loading = 'lazy';
-  iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
-  iframe.allowFullscreen = true;
-  iframe.src = `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?rel=0&modestbranding=1`;
-  wrap.appendChild(iframe);
+  if (!section) return;
+  const wraps = Array.from(section.querySelectorAll('.youtube-frame-wrap'));
+  if (!wraps.length) return;
+  let anyVideo = false;
+  wraps.forEach(wrap => {
+    const id = youtubeIdFromUrl(wrap.dataset.youtubeUrl || '');
+    const existing = wrap.querySelector('iframe');
+    const src = id ? `https://www.youtube-nocookie.com/embed/${encodeURIComponent(id)}?rel=0&modestbranding=1` : '';
+    if (id) anyVideo = true;
+    // Keep a playing video untouched if nothing changed.
+    if (existing && src && existing.getAttribute('src') === src) return;
+    wrap.innerHTML = '';
+    if (!id) {
+      const placeholder = document.createElement('div');
+      placeholder.className = 'youtube-placeholder';
+      placeholder.textContent = 'Set a YouTube link in edit mode. The public page shows a large landscape thumbnail and does not autoplay.';
+      wrap.appendChild(placeholder);
+      return;
+    }
+    const iframe = document.createElement('iframe');
+    iframe.title = 'Featured YouTube video';
+    iframe.loading = 'lazy';
+    iframe.allow = 'accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
+    iframe.allowFullscreen = true;
+    iframe.src = src;
+    wrap.appendChild(iframe);
+  });
+  section.hidden = !anyVideo && !document.body.classList.contains('editing');
 }
 const youtubeBtn = document.getElementById('youtubeBtn');
 if (youtubeBtn) youtubeBtn.addEventListener('click', () => {
